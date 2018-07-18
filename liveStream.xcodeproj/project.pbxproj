@@ -19,6 +19,8 @@
 		2B1E9C6020FE7631005FCBD0 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E9C5720FE7631005FCBD0 /* title.png */; };
 		2B1E9CAA20FFDB29005FCBD0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9C9D20FFDB17005FCBD0 /* Alamofire.framework */; };
 		2B1E9CAB20FFDB29005FCBD0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9C9D20FFDB17005FCBD0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B1E9CC820FFEB68005FCBD0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */; };
+		2B1E9CC920FFEB68005FCBD0 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B41232620F8581600F9523A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232520F8581600F9523A /* AppDelegate.swift */; };
 		2B41232820F8581600F9523A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232720F8581600F9523A /* ViewController.swift */; };
 		2B41232B20F8581600F9523A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41232920F8581600F9523A /* Main.storyboard */; };
@@ -99,6 +101,83 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
+		2B1E9CBA20FFEB3E005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		2B1E9CBC20FFEB3E005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		2B1E9CBE20FFEB3E005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON macOS";
+		};
+		2B1E9CC020FFEB3E005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON macOS Tests";
+		};
+		2B1E9CC220FFEB3E005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		2B1E9CC420FFEB3E005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		2B1E9CC620FFEB3E005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
+		2B1E9CCA20FFEB68005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		2B1E9CD2210009B5005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D248F071A751C3700E44E6B;
+			remoteInfo = Example;
+		};
+		2B1E9CD4210009B5005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D248F311A751C7800E44E6B;
+			remoteInfo = QRCode;
+		};
+		2B1E9CD6210009B5005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D248F3B1A751C7800E44E6B;
+			remoteInfo = QRCodeTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -108,6 +187,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2B1E9CC920FFEB68005FCBD0 /* SwiftyJSON.framework in Embed Frameworks */,
 				2B1E9CAB20FFDB29005FCBD0 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -134,6 +214,8 @@
 		2B1E9C5620FE7631005FCBD0 /* Rectangle 542@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 542@3x.png"; sourceTree = "<group>"; };
 		2B1E9C5720FE7631005FCBD0 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		2B1E9C9120FFDB17005FCBD0 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QRCode.xcodeproj; path = "../../Downloads/QRCode-master 2/QRCode.xcodeproj"; sourceTree = "<group>"; };
 		2B41232220F8581600F9523A /* liveStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liveStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B41232520F8581600F9523A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B41232720F8581600F9523A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +263,7 @@
 				2B41233F20F8587B00F9523A /* QuartzCore.framework in Frameworks */,
 				2B41233D20F8586D00F9523A /* SystemConfiguration.framework in Frameworks */,
 				2B41233B20F8585C00F9523A /* UIKit.framework in Frameworks */,
+				2B1E9CC820FFEB68005FCBD0 /* SwiftyJSON.framework in Frameworks */,
 				2B41233920F8584E00F9523A /* VideoToolbox.framework in Frameworks */,
 				2B1E9CAA20FFDB29005FCBD0 /* Alamofire.framework in Frameworks */,
 			);
@@ -219,9 +302,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2B1E9CB020FFEB3E005FCBD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */,
+				2B1E9CBD20FFEB3E005FCBD0 /* SwiftyJSON iOS Tests.xctest */,
+				2B1E9CBF20FFEB3E005FCBD0 /* SwiftyJSON.framework */,
+				2B1E9CC120FFEB3E005FCBD0 /* SwiftyJSON macOS Tests.xctest */,
+				2B1E9CC320FFEB3E005FCBD0 /* SwiftyJSON.framework */,
+				2B1E9CC520FFEB3E005FCBD0 /* SwiftyJSON.framework */,
+				2B1E9CC720FFEB3E005FCBD0 /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B1E9CCD210009B4005FCBD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B1E9CD3210009B5005FCBD0 /* Example.app */,
+				2B1E9CD5210009B5005FCBD0 /* QRCode.framework */,
+				2B1E9CD7210009B5005FCBD0 /* QRCodeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2B41231920F8581600F9523A = {
 			isa = PBXGroup;
 			children = (
+				2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */,
+				2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */,
 				2B1E9C9120FFDB17005FCBD0 /* Alamofire.xcodeproj */,
 				2B1E9C4E20FE7612005FCBD0 /* Design */,
 				2B41232420F8581600F9523A /* liveStream */,
@@ -310,6 +419,7 @@
 			);
 			dependencies = (
 				2B1E9CAD20FFDB29005FCBD0 /* PBXTargetDependency */,
+				2B1E9CCB20FFEB68005FCBD0 /* PBXTargetDependency */,
 			);
 			name = liveStream;
 			productName = liveStream;
@@ -346,6 +456,14 @@
 				{
 					ProductGroup = 2B1E9C9220FFDB17005FCBD0 /* Products */;
 					ProjectRef = 2B1E9C9120FFDB17005FCBD0 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 2B1E9CCD210009B4005FCBD0 /* Products */;
+					ProjectRef = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
+				},
+				{
+					ProductGroup = 2B1E9CB020FFEB3E005FCBD0 /* Products */;
+					ProjectRef = 2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -403,6 +521,76 @@
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
 			remoteRef = 2B1E9CA820FFDB17005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 2B1E9CBA20FFEB3E005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CBD20FFEB3E005FCBD0 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 2B1E9CBC20FFEB3E005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CBF20FFEB3E005FCBD0 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 2B1E9CBE20FFEB3E005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CC120FFEB3E005FCBD0 /* SwiftyJSON macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON macOS Tests.xctest";
+			remoteRef = 2B1E9CC020FFEB3E005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CC320FFEB3E005FCBD0 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 2B1E9CC220FFEB3E005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CC520FFEB3E005FCBD0 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 2B1E9CC420FFEB3E005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CC720FFEB3E005FCBD0 /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = 2B1E9CC620FFEB3E005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CD3210009B5005FCBD0 /* Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Example.app;
+			remoteRef = 2B1E9CD2210009B5005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CD5210009B5005FCBD0 /* QRCode.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QRCode.framework;
+			remoteRef = 2B1E9CD4210009B5005FCBD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B1E9CD7210009B5005FCBD0 /* QRCodeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QRCodeTests.xctest;
+			remoteRef = 2B1E9CD6210009B5005FCBD0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -469,6 +657,11 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
 			targetProxy = 2B1E9CAC20FFDB29005FCBD0 /* PBXContainerItemProxy */;
+		};
+		2B1E9CCB20FFEB68005FCBD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 2B1E9CCA20FFEB68005FCBD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

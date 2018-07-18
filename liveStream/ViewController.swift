@@ -1,11 +1,10 @@
 import UIKit
 import CoreFoundation
 import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController, BambuserViewDelegate {
     var bambuserView : BambuserView
-//    var broadcastButton : UIButton
-    
     @IBOutlet weak var broadcastButton: UIButton!
     @IBOutlet weak var headerImage: UIButton!
     
@@ -47,13 +46,11 @@ class ViewController: UIViewController, BambuserViewDelegate {
      
     }
 
-    
     func broadcastStarted() {
         NSLog("Received broadcastStarted signal")
         broadcastButton.setTitle("Stop", for: UIControlState.normal)
         broadcastButton.removeTarget(nil, action: nil, for: UIControlEvents.touchUpInside)
         broadcastButton.addTarget(bambuserView, action: #selector(bambuserView.stopBroadcasting), for: UIControlEvents.touchUpInside)
-
     }
     
     func broadcastIdReceived(_ broadcastId: String!) {
@@ -76,21 +73,31 @@ class ViewController: UIViewController, BambuserViewDelegate {
             "Accept": "aapplication/vnd.bambuser.v1+json",
             "Content-Type": "application/json"
         ]
-        
-        Alamofire.request("https://api.irisplatform.io/broadcasts", headers: headers).responseJSON { response in
-            debugPrint(response)
-            print(response)
-            
-        
-            
-            
-        }
-        
-       
-    }
-    
+     
+        Alamofire.request("https://api.irisplatform.io/broadcasts", headers: headers).responseJSON { (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                
+                var test = [Int:String] ()
 
-    
+                for items in (swiftyJsonVar["results"]) {
+                    
+                    let (_, data) = items
+                    //print(data["created"], data["resourceUri"])
+//                    let typeA = type(of: data["created"])
+//                    print(typeA)
+                    
+                    test[data["created"].int!] = data["resourceUri"].string!
+                
+                }
+                let (_,v) = test.sorted(by: <).last!
+                print(v)
+                
+            }
+        }
+    }
+            
+
     func broadcastStopped() {
         NSLog("Received broadcastStopped signal")
         broadcastButton.setTitle("Broadcast", for: UIControlState.normal)
@@ -100,5 +107,5 @@ class ViewController: UIViewController, BambuserViewDelegate {
     
   
     
-    
 }
+
