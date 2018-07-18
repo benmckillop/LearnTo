@@ -60,11 +60,11 @@ class ViewController: UIViewController, BambuserViewDelegate {
         
         let alert = UIAlertController(title: "Here is your ID!", message: broadcastId, preferredStyle: .alert)
         
-        func generateQRCode() {
-            let qrCode = QRCode(BroadcastID)
-            qrCode?.image
-        }
-        
+//        func generateQRCode() {
+//            let qrCode = QRCode(BroadcastID)
+//            qrCode?.image
+//        }
+//
     }
     
     func broadcastStopped() {

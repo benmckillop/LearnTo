@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BAAD73FD063C6BEF1852FC7 /* Pods_liveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7004F9185DB74682071F874B /* Pods_liveStream.framework */; };
 		2B1E9C4920FE6A8C005FCBD0 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9C4820FE6A8C005FCBD0 /* LoadViewController.swift */; };
 		2B1E9C5820FE7631005FCBD0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E9C4F20FE7631005FCBD0 /* button.png */; };
 		2B1E9C5920FE7631005FCBD0 /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E9C5020FE7631005FCBD0 /* backArrow.png */; };
@@ -83,9 +82,8 @@
 		2B41235420F8595400F9523A /* libbambuser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbambuser.a; path = prebuilt/lib/libbambuser.a; sourceTree = "<group>"; };
 		2B41235620F8595D00F9523A /* libbambuserplayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbambuserplayer.a; sourceTree = "<group>"; };
 		2B41235820F859A600F9523A /* libbambuser-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libbambuser-bridge.h"; sourceTree = "<group>"; };
-		2E60886AEBBF0AA40862D4E4 /* Pods-liveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liveStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-liveStream/Pods-liveStream.debug.xcconfig"; sourceTree = "<group>"; };
-		7004F9185DB74682071F874B /* Pods_liveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_liveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D18FDBF4819BECBE231DEE84 /* Pods-liveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liveStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-liveStream/Pods-liveStream.release.xcconfig"; sourceTree = "<group>"; };
+		884A08034EABB69FACD3FCF9 /* Pods-liveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liveStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-liveStream/Pods-liveStream.debug.xcconfig"; sourceTree = "<group>"; };
+		C0FC64D7190A544062020AB6 /* Pods-liveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liveStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-liveStream/Pods-liveStream.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 				2B41233D20F8586D00F9523A /* SystemConfiguration.framework in Frameworks */,
 				2B41233B20F8585C00F9523A /* UIKit.framework in Frameworks */,
 				2B41233920F8584E00F9523A /* VideoToolbox.framework in Frameworks */,
-				1BAAD73FD063C6BEF1852FC7 /* Pods_liveStream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +135,7 @@
 				2B41232420F8581600F9523A /* liveStream */,
 				2B41232320F8581600F9523A /* Products */,
 				2B41233720F8584E00F9523A /* Frameworks */,
-				AC134184D844F3C3EE459919 /* Pods */,
+				A47C69FD1ECFBCE066C94D41 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,16 +188,15 @@
 				2B41233C20F8586D00F9523A /* SystemConfiguration.framework */,
 				2B41233A20F8585C00F9523A /* UIKit.framework */,
 				2B41233820F8584E00F9523A /* VideoToolbox.framework */,
-				7004F9185DB74682071F874B /* Pods_liveStream.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AC134184D844F3C3EE459919 /* Pods */ = {
+		A47C69FD1ECFBCE066C94D41 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2E60886AEBBF0AA40862D4E4 /* Pods-liveStream.debug.xcconfig */,
-				D18FDBF4819BECBE231DEE84 /* Pods-liveStream.release.xcconfig */,
+				884A08034EABB69FACD3FCF9 /* Pods-liveStream.debug.xcconfig */,
+				C0FC64D7190A544062020AB6 /* Pods-liveStream.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -216,7 +212,6 @@
 				2B41231E20F8581600F9523A /* Sources */,
 				2B41231F20F8581600F9523A /* Frameworks */,
 				2B41232020F8581600F9523A /* Resources */,
-				3510F5CB4CC85C1DB08AD73F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,24 +279,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3510F5CB4CC85C1DB08AD73F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-liveStream/Pods-liveStream-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-liveStream/Pods-liveStream-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3A7C19D2AC308D73B6CAA976 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,7 +448,7 @@
 		};
 		2B41233520F8581800F9523A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E60886AEBBF0AA40862D4E4 /* Pods-liveStream.debug.xcconfig */;
+			baseConfigurationReference = 884A08034EABB69FACD3FCF9 /* Pods-liveStream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,7 +473,7 @@
 		};
 		2B41233620F8581800F9523A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D18FDBF4819BECBE231DEE84 /* Pods-liveStream.release.xcconfig */;
+			baseConfigurationReference = C0FC64D7190A544062020AB6 /* Pods-liveStream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

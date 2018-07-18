@@ -10,4 +10,4 @@ target 'liveStream' do
 end
 
 
-pod "QRCode"
+

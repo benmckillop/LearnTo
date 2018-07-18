@@ -7,87 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0188A7885B69A2B8D3178E6D143ED022 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97672C3F247A7439740688C31991BD4 /* UIImageViewExtension.swift */; };
-		1C33A786FDA07FD699D6AFA215AB2803 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		40E1B8A69EE9B3F48390CC40E4198E69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		6B5F8F3B15CA2329E8BA0D04357ABDDC /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25362ACD732E3C59798B8BF36206FA /* CIColorExtension.swift */; };
-		85DF0B18ABC2CC485DA01F947F83BB04 /* QRCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E58F4EA600D10AB8339EC55467241 /* QRCode-dummy.m */; };
-		A2ADB84AEC64A11F48F73D961DE9A9C5 /* Pods-liveStream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B4A093102751211E092EECB5EA43F6 /* Pods-liveStream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0C7F5C2A1C8F41611F18D7079983432 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5749DE6036FC4AA47D65DA91E828F /* CIImageExtension.swift */; };
-		B2DE6BF2336DC9E40B7D835EF1CAFC12 /* QRCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC00185DFB9508B27BDD22FCD93B7D61 /* QRCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9712C1064B750B35770AD2ADCDA6C82 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0097B9EB35125DCE94F01ABB9F55E1 /* QRCode.swift */; };
-		F0EB60D2E4C4AB4998E6763EC10148E6 /* Pods-liveStream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B05B440DD3489D986DF26FA982B4EE /* Pods-liveStream-dummy.m */; };
+		7E1AFB1CED586110F4C27389E2304829 /* Pods-liveStream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B05B440DD3489D986DF26FA982B4EE /* Pods-liveStream-dummy.m */; };
+		822746751500E9152D9B36567F69E898 /* Pods-liveStream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B4A093102751211E092EECB5EA43F6 /* Pods-liveStream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD1BFF5021275A361AAAA9A5E6064A92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6AA8C392E8F1BF11AB18C876C2B605E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6569DB4C2DE90568316BA91565E86BF7;
-			remoteInfo = QRCode;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		24713955D55A57EA45085D2F52457230 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32464F6A17CDEFCB76AEC46E8FD03DC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		356E58F4EA600D10AB8339EC55467241 /* QRCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCode-dummy.m"; sourceTree = "<group>"; };
 		35B05B440DD3489D986DF26FA982B4EE /* Pods-liveStream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-liveStream-dummy.m"; sourceTree = "<group>"; };
 		3C4F074CD35CE7595A8CBC1EC5382AB0 /* Pods-liveStream-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-liveStream-resources.sh"; sourceTree = "<group>"; };
-		41EEA5CDC0FB9B308C2BCB0A35D27356 /* QRCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCode.xcconfig; sourceTree = "<group>"; };
-		43F81FA221CE52689F3D27968F439358 /* QRCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QRCode.modulemap; sourceTree = "<group>"; };
-		4F0097B9EB35125DCE94F01ABB9F55E1 /* QRCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = QRCode/QRCode.swift; sourceTree = "<group>"; };
 		519B1CCAA3DB1DC8685EC9C299210BA4 /* Pods-liveStream-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-liveStream-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67DDCA90C8E55DD659FC9AC1634445D1 /* QRCode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-prefix.pch"; sourceTree = "<group>"; };
-		8A25362ACD732E3C59798B8BF36206FA /* CIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIColorExtension.swift; path = QRCode/CIColorExtension.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0566042B640DF833D5F9F9B604736CF /* Pods-liveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-liveStream.debug.xcconfig"; sourceTree = "<group>"; };
-		A33C54BB6EB181E9B0C954013CAC73FC /* Pods_liveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_liveStream.framework; path = "Pods-liveStream.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C0DD0D9EDC1F965EAE4C0AC38041C0 /* Pods_liveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_liveStream.framework; path = "Pods-liveStream.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FE264CCDFCDE83F3E02D218A46CEAF /* Pods-liveStream-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-liveStream-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B5E5749DE6036FC4AA47D65DA91E828F /* CIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = QRCode/CIImageExtension.swift; sourceTree = "<group>"; };
-		B97672C3F247A7439740688C31991BD4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = QRCode/UIImageViewExtension.swift; sourceTree = "<group>"; };
-		BA3FF7AE05952AF414E8B00D81A4F5A0 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QRCode.framework; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C607151C4E37C8F22456942B9A6F1EFB /* Pods-liveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-liveStream.release.xcconfig"; sourceTree = "<group>"; };
 		C9B4A093102751211E092EECB5EA43F6 /* Pods-liveStream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-liveStream-umbrella.h"; sourceTree = "<group>"; };
 		CED044E44D96171ED5A2860BD51CC371 /* Pods-liveStream-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-liveStream-frameworks.sh"; sourceTree = "<group>"; };
-		DC00185DFB9508B27BDD22FCD93B7D61 /* QRCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-umbrella.h"; sourceTree = "<group>"; };
 		E219CEA154B0D076B5A34727426659E5 /* Pods-liveStream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-liveStream.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A2E21FDD0B01F9B71C1BF8548ABCD16F /* Frameworks */ = {
+		591C3389E1D9C79CF8A14158D218983A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C33A786FDA07FD699D6AFA215AB2803 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A533CEF9B976D712DA11EE5345F8FC26 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				40E1B8A69EE9B3F48390CC40E4198E69 /* Foundation.framework in Frameworks */,
+				FD1BFF5021275A361AAAA9A5E6064A92 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0888CC61BB6E905B1CF23D4473BA8AFA /* Support Files */ = {
+		3D52EECE6C2CDF7FFDAD64CDCD63B3DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32464F6A17CDEFCB76AEC46E8FD03DC5 /* Info.plist */,
-				43F81FA221CE52689F3D27968F439358 /* QRCode.modulemap */,
-				41EEA5CDC0FB9B308C2BCB0A35D27356 /* QRCode.xcconfig */,
-				356E58F4EA600D10AB8339EC55467241 /* QRCode-dummy.m */,
-				67DDCA90C8E55DD659FC9AC1634445D1 /* QRCode-prefix.pch */,
-				DC00185DFB9508B27BDD22FCD93B7D61 /* QRCode-umbrella.h */,
+				A3C0DD0D9EDC1F965EAE4C0AC38041C0 /* Pods_liveStream.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/QRCode";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		523C883B1EBE03AA6F72A7974FF157F6 /* Targets Support Files */ = {
@@ -111,27 +69,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				98923A4FFDA55D0BDEEACB6729905BD2 /* Pods */,
-				A4EE1D7A026811EF479D5886396EA000 /* Products */,
+				3D52EECE6C2CDF7FFDAD64CDCD63B3DA /* Products */,
 				523C883B1EBE03AA6F72A7974FF157F6 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		98923A4FFDA55D0BDEEACB6729905BD2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C77E89B9BA093391F25AFB349816A314 /* QRCode */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A4EE1D7A026811EF479D5886396EA000 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A33C54BB6EB181E9B0C954013CAC73FC /* Pods_liveStream.framework */,
-				BA3FF7AE05952AF414E8B00D81A4F5A0 /* QRCode.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -140,19 +80,6 @@
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C77E89B9BA093391F25AFB349816A314 /* QRCode */ = {
-			isa = PBXGroup;
-			children = (
-				8A25362ACD732E3C59798B8BF36206FA /* CIColorExtension.swift */,
-				B5E5749DE6036FC4AA47D65DA91E828F /* CIImageExtension.swift */,
-				4F0097B9EB35125DCE94F01ABB9F55E1 /* QRCode.swift */,
-				B97672C3F247A7439740688C31991BD4 /* UIImageViewExtension.swift */,
-				0888CC61BB6E905B1CF23D4473BA8AFA /* Support Files */,
-			);
-			name = QRCode;
-			path = QRCode;
 			sourceTree = "<group>";
 		};
 		DF4F5C9CA6285792DE86EADD4542D2A2 /* Pods-liveStream */ = {
@@ -176,58 +103,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C2A4ABD18A33A4F9F8E6FBBED8F29A9 /* Headers */ = {
+		112772394695105AB1FA564818D13DB9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2DE6BF2336DC9E40B7D835EF1CAFC12 /* QRCode-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C88B1CFA94EFF7659C6B93073673211 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2ADB84AEC64A11F48F73D961DE9A9C5 /* Pods-liveStream-umbrella.h in Headers */,
+				822746751500E9152D9B36567F69E898 /* Pods-liveStream-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6569DB4C2DE90568316BA91565E86BF7 /* QRCode */ = {
+		84C5403B12A20F0A968B17E909278664 /* Pods-liveStream */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D6F683F5D5DB88B23E466A3C288654D /* Build configuration list for PBXNativeTarget "QRCode" */;
+			buildConfigurationList = BF2726F62A6E58FAA4A8B93BD068EA9B /* Build configuration list for PBXNativeTarget "Pods-liveStream" */;
 			buildPhases = (
-				122E981FB8ADA0972478B3C7C3B337D6 /* Sources */,
-				A2E21FDD0B01F9B71C1BF8548ABCD16F /* Frameworks */,
-				0C2A4ABD18A33A4F9F8E6FBBED8F29A9 /* Headers */,
+				44450841AD69152723E941C79A67E039 /* Sources */,
+				591C3389E1D9C79CF8A14158D218983A /* Frameworks */,
+				112772394695105AB1FA564818D13DB9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = QRCode;
-			productName = QRCode;
-			productReference = BA3FF7AE05952AF414E8B00D81A4F5A0 /* QRCode.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B23508954913DBC85248C3587A51DC7D /* Pods-liveStream */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B98B59A0F79A6E357E6E204114558F4B /* Build configuration list for PBXNativeTarget "Pods-liveStream" */;
-			buildPhases = (
-				E89E676117A239A2CFC7ACCD6E57697E /* Sources */,
-				A533CEF9B976D712DA11EE5345F8FC26 /* Frameworks */,
-				3C88B1CFA94EFF7659C6B93073673211 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E1276FA36B7939C424961672FBF19D6C /* PBXTargetDependency */,
 			);
 			name = "Pods-liveStream";
 			productName = "Pods-liveStream";
-			productReference = A33C54BB6EB181E9B0C954013CAC73FC /* Pods_liveStream.framework */;
+			productReference = A3C0DD0D9EDC1F965EAE4C0AC38041C0 /* Pods_liveStream.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -247,49 +148,65 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A4EE1D7A026811EF479D5886396EA000 /* Products */;
+			productRefGroup = 3D52EECE6C2CDF7FFDAD64CDCD63B3DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B23508954913DBC85248C3587A51DC7D /* Pods-liveStream */,
-				6569DB4C2DE90568316BA91565E86BF7 /* QRCode */,
+				84C5403B12A20F0A968B17E909278664 /* Pods-liveStream */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		122E981FB8ADA0972478B3C7C3B337D6 /* Sources */ = {
+		44450841AD69152723E941C79A67E039 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B5F8F3B15CA2329E8BA0D04357ABDDC /* CIColorExtension.swift in Sources */,
-				B0C7F5C2A1C8F41611F18D7079983432 /* CIImageExtension.swift in Sources */,
-				85DF0B18ABC2CC485DA01F947F83BB04 /* QRCode-dummy.m in Sources */,
-				C9712C1064B750B35770AD2ADCDA6C82 /* QRCode.swift in Sources */,
-				0188A7885B69A2B8D3178E6D143ED022 /* UIImageViewExtension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E89E676117A239A2CFC7ACCD6E57697E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0EB60D2E4C4AB4998E6763EC10148E6 /* Pods-liveStream-dummy.m in Sources */,
+				7E1AFB1CED586110F4C27389E2304829 /* Pods-liveStream-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		E1276FA36B7939C424961672FBF19D6C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = QRCode;
-			target = 6569DB4C2DE90568316BA91565E86BF7 /* QRCode */;
-			targetProxy = 6AA8C392E8F1BF11AB18C876C2B605E9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
+		3F092AA352906C653E3D6301A953A323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0566042B640DF833D5F9F9B604736CF /* Pods-liveStream.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-liveStream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-liveStream/Pods-liveStream.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,83 +270,6 @@
 			};
 			name = Debug;
 		};
-		898C35E1101B0477FCBD64829944CF0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0566042B640DF833D5F9F9B604736CF /* Pods-liveStream.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-liveStream/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-liveStream/Pods-liveStream.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8CD0E55FCB624CDBFD3890E8A1036EC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41EEA5CDC0FB9B308C2BCB0A35D27356 /* QRCode.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QRCode/QRCode-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QRCode/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/QRCode/QRCode.modulemap";
-				PRODUCT_MODULE_NAME = QRCode;
-				PRODUCT_NAME = QRCode;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -488,7 +328,7 @@
 			};
 			name = Release;
 		};
-		E5BBCA24E06E8C34583B87FE2AEAC0AB /* Release */ = {
+		F150C1EA96660A3FB9AB4B0EA2E7842A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C607151C4E37C8F22456942B9A6F1EFB /* Pods-liveStream.release.xcconfig */;
 			buildSettings = {
@@ -520,49 +360,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		FDC6B9B4A5F55B5387A92AFF7F156B7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41EEA5CDC0FB9B308C2BCB0A35D27356 /* QRCode.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QRCode/QRCode-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QRCode/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/QRCode/QRCode.modulemap";
-				PRODUCT_MODULE_NAME = QRCode;
-				PRODUCT_NAME = QRCode;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -576,20 +379,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D6F683F5D5DB88B23E466A3C288654D /* Build configuration list for PBXNativeTarget "QRCode" */ = {
+		BF2726F62A6E58FAA4A8B93BD068EA9B /* Build configuration list for PBXNativeTarget "Pods-liveStream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDC6B9B4A5F55B5387A92AFF7F156B7A /* Debug */,
-				8CD0E55FCB624CDBFD3890E8A1036EC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B98B59A0F79A6E357E6E204114558F4B /* Build configuration list for PBXNativeTarget "Pods-liveStream" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				898C35E1101B0477FCBD64829944CF0A /* Debug */,
-				E5BBCA24E06E8C34583B87FE2AEAC0AB /* Release */,
+				3F092AA352906C653E3D6301A953A323 /* Debug */,
+				F150C1EA96660A3FB9AB4B0EA2E7842A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
