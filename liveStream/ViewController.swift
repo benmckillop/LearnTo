@@ -1,5 +1,6 @@
 import UIKit
 import CoreFoundation
+import Alamofire
 
 class ViewController: UIViewController, BambuserViewDelegate {
     var bambuserView : BambuserView
@@ -42,6 +43,7 @@ class ViewController: UIViewController, BambuserViewDelegate {
         broadcastButton.removeTarget(nil, action: nil, for: UIControlEvents.touchUpInside)
         broadcastButton.addTarget(bambuserView, action: #selector(bambuserView.stopBroadcasting), for: UIControlEvents.touchUpInside)
         bambuserView.startBroadcasting()
+        httpGet()
      
     }
 
@@ -66,6 +68,28 @@ class ViewController: UIViewController, BambuserViewDelegate {
 //        }
 //
     }
+    
+    
+    func httpGet() {
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer 6z79bmjff25a9n4wb66v3tjso",
+            "Accept": "aapplication/vnd.bambuser.v1+json",
+            "Content-Type": "application/json"
+        ]
+        
+        Alamofire.request("https://api.irisplatform.io/broadcasts", headers: headers).responseJSON { response in
+            debugPrint(response)
+            print(response)
+            
+        
+            
+            
+        }
+        
+       
+    }
+    
+
     
     func broadcastStopped() {
         NSLog("Received broadcastStopped signal")
