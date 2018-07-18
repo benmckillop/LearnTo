@@ -15,13 +15,15 @@ class ViewController: UIViewController, BambuserViewDelegate {
         bambuserView.delegate = self;
     }
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        bambuserView.orientation = UIApplication.shared.statusBarOrientation
-        self.view.addSubview(bambuserView.view)
-        broadcastButton.addTarget(self, action: #selector(ViewController.broadcast), for: UIControlEvents.touchUpInside)
-        broadcastButton.setTitle("Broadcast", for: UIControlState.normal)
-        self.view.addSubview(broadcastButton)
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view, typically from a nib.
+//        bambuserView.orientation = UIApplication.shared.statusBarOrientation
+//        self.view.addSubview(bambuserView.view)
+//        broadcastButton.addTarget(self, action: #selector(ViewController.broadcast), for: UIControlEvents.touchUpInside)
+//        broadcastButton.setTitle("Broadcast", for: UIControlState.normal)
+//        self.view.addSubview(broadcastButton)
+//
     }
     
     override func viewWillLayoutSubviews() {
@@ -42,6 +44,10 @@ class ViewController: UIViewController, BambuserViewDelegate {
         broadcastButton.removeTarget(nil, action: nil, for: UIControlEvents.touchUpInside)
         broadcastButton.addTarget(bambuserView, action: #selector(bambuserView.stopBroadcasting), for: UIControlEvents.touchUpInside)
         bambuserView.startBroadcasting()
+        
+        
+//        let image = generateQRCode(from: "test string!")
+//        imageView.image = image
      
     }
 
@@ -56,15 +62,10 @@ class ViewController: UIViewController, BambuserViewDelegate {
     
     func broadcastIdReceived(_ broadcastId: String!) {
         print(broadcastId)
-        let BroadcastID = broadcastId
-        
-        let alert = UIAlertController(title: "Here is your ID!", message: broadcastId, preferredStyle: .alert)
-        
-//        func generateQRCode() {
-//            let qrCode = QRCode(BroadcastID)
-//            qrCode?.image
-//        }
+//        let BroadcastID = broadcastId
 //
+//        let alert = UIAlertController(title: "Here is your ID!", message: broadcastId, preferredStyle: .alert)
+    
     }
     
     func broadcastStopped() {
@@ -73,8 +74,31 @@ class ViewController: UIViewController, BambuserViewDelegate {
         broadcastButton.removeTarget(nil, action: nil, for: UIControlEvents.touchUpInside)
         broadcastButton.addTarget(self, action: #selector(ViewController.broadcast), for: UIControlEvents.touchUpInside)
     }
+//
+//    @IBOutlet weak var imageView: UIImageView!
+//
+//    func generateQRCode(from string: String) -> UIImage?{
+//        let data = string.data(using: String.Encoding.isoLatin1)
+//
+//        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+//            filter.setValue(data, forKey: "message")
+//            let transform = CGAffineTransform(scaleX: 1, y: 1)
+//
+//            if let output = filter.outputImage?.transformed(by:transform) {
+//                return UIImage(ciImage: output)
+//            }
+//        }
+//
+//        return nil
+//    }
+//
+//
+//    @IBAction func qrButton(_ sender: Any) {
+//        let image = generateQRCode(from: "test string!")
+//        imageView.image = image
+//
+//    }
     
-  
     
     
 }

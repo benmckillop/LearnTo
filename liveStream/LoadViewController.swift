@@ -25,23 +25,23 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
         broadcastID = "dfks"
         
         
-        let video = "https://cdn.bambuser.net/broadcasts/" + broadcastID
+        let video = "https://cdn.bambuser.net/broadcasts/a4238a75-1e46-4844-8ef2-6c08604b1e67?da_signature_method=HMAC-SHA256&da_id=9e1b1e83-657d-7c83-b8e7-0b782ac9543a&da_timestamp=1531939605&da_static=1&da_ttl=0&da_signature=b9aa1bae14c6dcc749cde07c2dc13e8a67dfd0110c0fcc6faa4c3cbab0d3ace0"
         bambuserPlayer.playVideo(video)
         self.view.addSubview(bambuserPlayer)
-        playButton.setTitle("Play", for: UIControlState.normal)
-        playButton.addTarget(bambuserPlayer, action: #selector(BambuserPlayer.playVideo as (BambuserPlayer) -> () -> Void), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(playButton)
-        pauseButton.setTitle("Pause", for: UIControlState.normal)
-        pauseButton.addTarget(bambuserPlayer, action: #selector(BambuserPlayer.pauseVideo as (BambuserPlayer) -> () -> Void), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(pauseButton)
-        rewindButton.setTitle("Rewind", for: UIControlState.normal)
-        rewindButton.addTarget(self, action: #selector(loadViewController.rewind), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(rewindButton)
+//        playButton.setTitle("Play", for: UIControlState.normal)
+//        playButton.addTarget(bambuserPlayer, action: #selector(BambuserPlayer.playVideo as (BambuserPlayer) -> () -> Void), for: UIControlEvents.touchUpInside)
+//        self.view.addSubview(playButton)
+//        pauseButton.setTitle("Pause", for: UIControlState.normal)
+//        pauseButton.addTarget(bambuserPlayer, action: #selector(BambuserPlayer.pauseVideo as (BambuserPlayer) -> () -> Void), for: UIControlEvents.touchUpInside)
+//        self.view.addSubview(pauseButton)
+//        rewindButton.setTitle("Rewind", for: UIControlState.normal)
+//        rewindButton.addTarget(self, action: #selector(loadViewController.rewind), for: UIControlEvents.touchUpInside)
+//        self.view.addSubview(rewindButton)
     }
     
-    @objc func rewind() {
-        bambuserPlayer.seek(to: 0.0);
-    }
+//    @objc func rewind() {
+//        bambuserPlayer.seek(to: 0.0);
+//    }
     
     override func viewWillLayoutSubviews() {
         let statusBarOffset = self.topLayoutGuide.length
