@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC2-Lq-u5i">
+                                <rect key="frame" x="122" y="280" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click to Broadcast!"/>
+                                <connections>
+                                    <segue destination="7oJ-fz-6aJ" kind="presentation" id="4bQ-oE-292"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYi-HU-2vS">
+                                <rect key="frame" x="105" y="318" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click to view Broadcast!"/>
+                                <connections>
+                                    <segue destination="QxU-r1-UkL" kind="presentation" id="2Ky-mA-raU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SGN-VH-cwP">
+            <objects>
+                <viewController id="QxU-r1-UkL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Epz-WP-xKI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9w-QK-iG9">
+                                <rect key="frame" x="105" y="142" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click to view Broadcast!"/>
+                                <connections>
+                                    <segue destination="lNz-dr-1fJ" kind="presentation" id="iSt-bT-XVU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oBl-nx-vtz">
+                                <rect key="frame" x="52" y="180" width="270" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GMH-cK-Z1W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJi-cs-UjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="884.70764617691157"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5qz-9U-zeW">
+            <objects>
+                <viewController id="7oJ-fz-6aJ" customClass="ViewController" customModule="liveStream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="duN-jh-DbU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQD-ik-TEc">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Qa7-Wm-jXQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Text!" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROY-8D-vv6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="ohN-my-lUQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadcast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsK-Mk-TeG">
+                                <rect key="frame" x="148" y="37" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vw5-nR-qHm">
+                                <rect key="frame" x="16" y="37" width="16" height="22"/>
+                                <state key="normal" image="backArrow.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="WT6-nT-fPa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ROY-8D-vv6" firstAttribute="top" secondItem="duN-jh-DbU" secondAttribute="top" id="CKl-pz-miZ"/>
+                            <constraint firstItem="ROY-8D-vv6" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leading" id="IU1-eC-HKj"/>
+                            <constraint firstItem="vw5-nR-qHm" firstAttribute="top" secondItem="jQ0-GH-FEU" secondAttribute="top" constant="17" id="KMv-SS-ZhV"/>
+                            <constraint firstItem="oQD-ik-TEc" firstAttribute="bottom" secondItem="jQ0-GH-FEU" secondAttribute="bottom" id="Obe-nc-kl7"/>
+                            <constraint firstItem="oQD-ik-TEc" firstAttribute="leading" secondItem="ROY-8D-vv6" secondAttribute="leading" id="UfO-p2-a0t"/>
+                            <constraint firstItem="ROY-8D-vv6" firstAttribute="centerX" secondItem="NsK-Mk-TeG" secondAttribute="centerX" id="xea-WI-ynY"/>
+                            <constraint firstItem="vw5-nR-qHm" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leadingMargin" id="xyW-cq-HfE"/>
+                            <constraint firstItem="vw5-nR-qHm" firstAttribute="top" secondItem="NsK-Mk-TeG" secondAttribute="top" id="yem-0U-PmF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jQ0-GH-FEU"/>
+                    </view>
+                    <connections>
+                        <outlet property="broadcastButton" destination="oQD-ik-TEc" id="V3y-uU-Gnp"/>
+                        <outlet property="headerImage" destination="ROY-8D-vv6" id="bKJ-8x-qRl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i9o-qI-oTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597.5999999999999" y="33.733133433283363"/>
+        </scene>
+        <!--Load View Controller-->
+        <scene sceneID="ybc-Dj-zum">
+            <objects>
+                <viewController id="lNz-dr-1fJ" customClass="loadViewController" customModule="liveStream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPd-Uz-hT9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ktL-8L-M9r"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYD-Z8-01B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-847" y="-1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backArrow.png" width="16" height="16"/>
+        <image name="button.png" width="375" height="56"/>
+    </resources>
+</document>
