@@ -2,11 +2,15 @@ import UIKit
 import CoreFoundation
 import Alamofire
 import SwiftyJSON
+import QRCode
 
 class ViewController: UIViewController, BambuserViewDelegate {
+    
     var bambuserView : BambuserView
+    
     @IBOutlet weak var broadcastButton: UIButton!
     @IBOutlet weak var headerImage: UIButton!
+    @IBOutlet weak var qrImage: UIImageView!
     
     required init?(coder aDecoder: NSCoder) {
         bambuserView = BambuserView(preset: kSessionPresetAuto)
@@ -14,6 +18,7 @@ class ViewController: UIViewController, BambuserViewDelegate {
         super.init(coder: aDecoder)
         bambuserView.delegate = self;
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,14 +33,16 @@ class ViewController: UIViewController, BambuserViewDelegate {
         var statusBarOffset : CGFloat = 0.0
         statusBarOffset = CGFloat(self.topLayoutGuide.length)
         bambuserView.previewFrame = CGRect(x: 0.0, y: 0.0 + statusBarOffset, width: self.view.bounds.size.width, height: self.view.bounds.size.height - statusBarOffset)
-        
     }
+    
+    //self.view.bounds.size.height
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    //enables the livestream to start broadcasting
     @objc func broadcast() {
         NSLog("Starting broadcast")
         broadcastButton.setTitle("Connecting", for: UIControlState.normal)
@@ -43,9 +50,9 @@ class ViewController: UIViewController, BambuserViewDelegate {
         broadcastButton.addTarget(bambuserView, action: #selector(bambuserView.stopBroadcasting), for: UIControlEvents.touchUpInside)
         bambuserView.startBroadcasting()
         httpGet()
-     
     }
-
+    
+    //changes whilst livestream is active to enable the stop button
     func broadcastStarted() {
         NSLog("Received broadcastStarted signal")
         broadcastButton.setTitle("Stop", for: UIControlState.normal)
@@ -53,20 +60,7 @@ class ViewController: UIViewController, BambuserViewDelegate {
         broadcastButton.addTarget(bambuserView, action: #selector(bambuserView.stopBroadcasting), for: UIControlEvents.touchUpInside)
     }
     
-    func broadcastIdReceived(_ broadcastId: String!) {
-        print(broadcastId)
-        let BroadcastID = broadcastId
-        
-        let alert = UIAlertController(title: "Here is your ID!", message: broadcastId, preferredStyle: .alert)
-        
-//        func generateQRCode() {
-//            let qrCode = QRCode(BroadcastID)
-//            qrCode?.image
-//        }
-//
-    }
-    
-    
+    //uses a get request to get all the broadcasts, json is parced to only show time and id, then is sorted to the latest time
     func httpGet() {
         let headers: HTTPHeaders = [
             "Authorization": "Bearer 6z79bmjff25a9n4wb66v3tjso",
@@ -83,29 +77,40 @@ class ViewController: UIViewController, BambuserViewDelegate {
                 for items in (swiftyJsonVar["results"]) {
                     
                     let (_, data) = items
-                    //print(data["created"], data["resourceUri"])
-//                    let typeA = type(of: data["created"])
-//                    print(typeA)
-                    
                     test[data["created"].int!] = data["resourceUri"].string!
-                
                 }
-                let (_,v) = test.sorted(by: <).last!
-                print(v)
                 
+                let (_,resourceUri) = test.sorted(by: <).last!
+                print(resourceUri)
+                
+                let Image = self.generateQRCode(from: resourceUri)
+                
+                self.qrImage.image = Image
             }
         }
     }
+ 
+    //generates qr code so that the signed url can be scanned by other phone
+    func generateQRCode(from string: String) -> UIImage? {
+        let data = string.data(using: String.Encoding.ascii)
+        
+        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+            filter.setValue(data, forKey: "inputMessage")
+            let transform = CGAffineTransform(scaleX: 3, y: 3)
             
+            if let output = filter.outputImage?.transformed(by: transform) {
+                return UIImage(ciImage: output)
+            }
+        }
+        return nil
+    }
 
+    //stops broadcast and sets the button back to normal
     func broadcastStopped() {
         NSLog("Received broadcastStopped signal")
         broadcastButton.setTitle("Broadcast", for: UIControlState.normal)
         broadcastButton.removeTarget(nil, action: nil, for: UIControlEvents.touchUpInside)
         broadcastButton.addTarget(self, action: #selector(ViewController.broadcast), for: UIControlEvents.touchUpInside)
     }
-    
-  
-    
 }
 

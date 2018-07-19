@@ -21,6 +21,8 @@
 		2B1E9CAB20FFDB29005FCBD0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9C9D20FFDB17005FCBD0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B1E9CC820FFEB68005FCBD0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */; };
 		2B1E9CC920FFEB68005FCBD0 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B1E9CD821000A4A005FCBD0 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CD5210009B5005FCBD0 /* QRCode.framework */; };
+		2B1E9CD921000A4A005FCBD0 /* QRCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CD5210009B5005FCBD0 /* QRCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B41232620F8581600F9523A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232520F8581600F9523A /* AppDelegate.swift */; };
 		2B41232820F8581600F9523A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232720F8581600F9523A /* ViewController.swift */; };
 		2B41232B20F8581600F9523A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41232920F8581600F9523A /* Main.storyboard */; };
@@ -178,6 +180,13 @@
 			remoteGlobalIDString = 4D248F3B1A751C7800E44E6B;
 			remoteInfo = QRCodeTests;
 		};
+		2B1E9CDA21000A4A005FCBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D248F301A751C7800E44E6B;
+			remoteInfo = QRCode;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -187,6 +196,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2B1E9CD921000A4A005FCBD0 /* QRCode.framework in Embed Frameworks */,
 				2B1E9CC920FFEB68005FCBD0 /* SwiftyJSON.framework in Embed Frameworks */,
 				2B1E9CAB20FFDB29005FCBD0 /* Alamofire.framework in Embed Frameworks */,
 			);
@@ -255,6 +265,7 @@
 				2B41234F20F858CC00F9523A /* libz.tbd in Frameworks */,
 				2B41234D20F858C200F9523A /* AudioToolbox.framework in Frameworks */,
 				2B41234B20F858B800F9523A /* AVFoundation.framework in Frameworks */,
+				2B1E9CD821000A4A005FCBD0 /* QRCode.framework in Frameworks */,
 				2B41234920F858AF00F9523A /* CoreGraphics.framework in Frameworks */,
 				2B41234720F858A900F9523A /* CoreLocation.framework in Frameworks */,
 				2B41234520F8589600F9523A /* CoreMedia.framework in Frameworks */,
@@ -420,6 +431,7 @@
 			dependencies = (
 				2B1E9CAD20FFDB29005FCBD0 /* PBXTargetDependency */,
 				2B1E9CCB20FFEB68005FCBD0 /* PBXTargetDependency */,
+				2B1E9CDB21000A4A005FCBD0 /* PBXTargetDependency */,
 			);
 			name = liveStream;
 			productName = liveStream;
@@ -662,6 +674,11 @@
 			isa = PBXTargetDependency;
 			name = "SwiftyJSON iOS";
 			targetProxy = 2B1E9CCA20FFEB68005FCBD0 /* PBXContainerItemProxy */;
+		};
+		2B1E9CDB21000A4A005FCBD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QRCode;
+			targetProxy = 2B1E9CDA21000A4A005FCBD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
