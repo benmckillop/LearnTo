@@ -12,6 +12,7 @@ class ViewController: UIViewController, BambuserViewDelegate {
     @IBOutlet weak var broadcastButton: UIButton!
     @IBOutlet weak var headerImage: UIButton!
     @IBOutlet weak var qrImage: UIImageView!
+    @IBOutlet weak var titleBar: UINavigationBar!
     
     required init?(coder aDecoder: NSCoder) {
         bambuserView = BambuserView(preset: kSessionPresetAuto)
@@ -33,6 +34,9 @@ class ViewController: UIViewController, BambuserViewDelegate {
         qrButton.setTitle("Dismiss", for: UIControlState.normal)
         self.view.addSubview(broadcastButton)
         qrButton.isHidden = true
+        view.bringSubview(toFront: headerImage)
+        view.bringSubview(toFront: titleBar)
+
     }
     
     override func viewWillLayoutSubviews() {
@@ -134,6 +138,11 @@ class ViewController: UIViewController, BambuserViewDelegate {
         broadcastButton.addTarget(self, action: #selector(ViewController.broadcast), for: UIControlEvents.touchUpInside)
         qrImage.isHidden = true
         qrButton.isHidden = true
+    }
+    
+    func displayLoadView() {
+        let scannerViewController = ScannerViewController()
+        present(scannerViewController, animated: true, completion: nil)
     }
 }
 

@@ -1,10 +1,14 @@
 import UIKit
 
+
 class loadViewController: UIViewController, BambuserPlayerDelegate {
     var bambuserPlayer: BambuserPlayer
     var playButton: UIButton
     var pauseButton: UIButton
     var rewindButton: UIButton
+    var scannedCode:String?
+    
+    @IBOutlet weak var topBar: UINavigationBar!
     
     required init?(coder aDecoder: NSCoder) {
         bambuserPlayer = BambuserPlayer()
@@ -16,27 +20,22 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.bringSubview(toFront: topBar)
         bambuserPlayer.delegate = self
         bambuserPlayer.applicationId = "EE5UFnBB5YbqBXvHFFM4MA"
-        var broadcastID: String
+//        var broadcastID: String
+//        print(scannedCode!)
         
         
-        broadcastID = "dfks"
+        
+        let broadcastID = UserDefaults.standard.string(forKey: "ID") ?? ""
+        
+  
         
         
-        let video = "https://cdn.bambuser.net/broadcasts/" + broadcastID
+        let video = broadcastID
         bambuserPlayer.playVideo(video)
         self.view.addSubview(bambuserPlayer)
-        playButton.setTitle("Play", for: UIControlState.normal)
-        playButton.addTarget(bambuserPlayer, action: #selector(BambuserPlayer.playVideo as (BambuserPlayer) -> () -> Void), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(playButton)
-        pauseButton.setTitle("Pause", for: UIControlState.normal)
-        pauseButton.addTarget(bambuserPlayer, action: #selector(BambuserPlayer.pauseVideo as (BambuserPlayer) -> () -> Void), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(pauseButton)
-        rewindButton.setTitle("Rewind", for: UIControlState.normal)
-        rewindButton.addTarget(self, action: #selector(loadViewController.rewind), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(rewindButton)
     }
     
     @objc func rewind() {
@@ -46,9 +45,7 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     override func viewWillLayoutSubviews() {
         let statusBarOffset = self.topLayoutGuide.length
         bambuserPlayer.frame = CGRect(x: 0, y: 0 + statusBarOffset, width: self.view.bounds.size.width, height: self.view.bounds.size.height - statusBarOffset)
-        playButton.frame = CGRect(x: 20, y: 20 + statusBarOffset, width: 100, height: 40)
-        pauseButton.frame = CGRect(x: 20, y: 80 + statusBarOffset, width: 100, height: 40)
-        rewindButton.frame = CGRect(x: 20, y: 140 + statusBarOffset, width: 100, height: 40)
+ 
     }
     
     override func didReceiveMemoryWarning() {
