@@ -23,7 +23,8 @@
 		2B1E9CC920FFEB68005FCBD0 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B1E9CD821000A4A005FCBD0 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CD5210009B5005FCBD0 /* QRCode.framework */; };
 		2B1E9CD921000A4A005FCBD0 /* QRCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CD5210009B5005FCBD0 /* QRCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2B1E9D0421024C3C005FCBD0 /* ConstrainedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9D0321024C3C005FCBD0 /* ConstrainedViewController.swift */; };
+		2B1E9D1921025218005FCBD0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */; };
+		2B1E9D1B2102627A005FCBD0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9D1A2102627A005FCBD0 /* DetailsViewController.swift */; };
 		2B41232620F8581600F9523A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232520F8581600F9523A /* AppDelegate.swift */; };
 		2B41232820F8581600F9523A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232720F8581600F9523A /* ViewController.swift */; };
 		2B41232B20F8581600F9523A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41232920F8581600F9523A /* Main.storyboard */; };
@@ -227,7 +228,8 @@
 		2B1E9C9120FFDB17005FCBD0 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QRCode.xcodeproj; path = "../../Downloads/QRCode-master 2/QRCode.xcodeproj"; sourceTree = "<group>"; };
-		2B1E9D0321024C3C005FCBD0 /* ConstrainedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainedViewController.swift; sourceTree = "<group>"; };
+		2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		2B1E9D1A2102627A005FCBD0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		2B41232220F8581600F9523A /* liveStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liveStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B41232520F8581600F9523A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B41232720F8581600F9523A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -382,12 +384,13 @@
 				2B41235820F859A600F9523A /* libbambuser-bridge.h */,
 				2B41232520F8581600F9523A /* AppDelegate.swift */,
 				2B41232720F8581600F9523A /* ViewController.swift */,
-				2B1E9C4820FE6A8C005FCBD0 /* LoadViewController.swift */,
 				2B41232920F8581600F9523A /* Main.storyboard */,
 				2B41232C20F8581800F9523A /* Assets.xcassets */,
 				2B41232E20F8581800F9523A /* LaunchScreen.storyboard */,
 				2B41233120F8581800F9523A /* Info.plist */,
-				2B1E9D0321024C3C005FCBD0 /* ConstrainedViewController.swift */,
+				2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */,
+				2B1E9C4820FE6A8C005FCBD0 /* LoadViewController.swift */,
+				2B1E9D1A2102627A005FCBD0 /* DetailsViewController.swift */,
 			);
 			path = liveStream;
 			sourceTree = "<group>";
@@ -670,7 +673,8 @@
 				2B41232820F8581600F9523A /* ViewController.swift in Sources */,
 				2B41232620F8581600F9523A /* AppDelegate.swift in Sources */,
 				2B1E9C4920FE6A8C005FCBD0 /* LoadViewController.swift in Sources */,
-				2B1E9D0421024C3C005FCBD0 /* ConstrainedViewController.swift in Sources */,
+				2B1E9D1921025218005FCBD0 /* ScannerViewController.swift in Sources */,
+				2B1E9D1B2102627A005FCBD0 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

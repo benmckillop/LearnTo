@@ -32,7 +32,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Click to view Broadcast!"/>
                                 <connections>
-                                    <segue destination="QxU-r1-UkL" kind="presentation" id="2Ky-mA-raU"/>
+                                    <segue destination="QxU-r1-UkL" kind="presentation" id="IbU-q8-qub"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,37 +43,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Scanner View Controller-->
         <scene sceneID="SGN-VH-cwP">
             <objects>
-                <viewController id="QxU-r1-UkL" sceneMemberID="viewController">
+                <viewController id="QxU-r1-UkL" customClass="ScannerViewController" customModule="liveStream" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Epz-WP-xKI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9w-QK-iG9">
-                                <rect key="frame" x="105" y="142" width="165" height="30"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7C-H0-n4r">
+                                <rect key="frame" x="67" y="181" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click to view Broadcast!"/>
-                                <connections>
-                                    <segue destination="lNz-dr-1fJ" kind="presentation" id="iSt-bT-XVU"/>
-                                </connections>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4F-8K-3BY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.60784313729999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="yvr-ho-IHb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oBl-nx-vtz">
-                                <rect key="frame" x="52" y="180" width="270" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" backIndicatorImage="Backward arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="6T7-sU-DC8">
+                                <rect key="frame" x="0.0" y="40" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.2901960784" green="0.60392156860000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Scan QR Code" id="aPX-fq-rIA">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Lyx-cq-DWz">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GLV-g4-5YK">
+                                                <rect key="frame" x="16" y="11" width="16" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="backArrow.png"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="3Cr-gd-x1h"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GMH-cK-Z1W"/>
                     </view>
+                    <connections>
+                        <outlet property="topBar" destination="6T7-sU-DC8" id="iWL-vG-uW7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJi-cs-UjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="884.70764617691157"/>
+            <point key="canvasLocation" x="614" y="1387"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5qz-9U-zeW">
@@ -92,26 +119,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROY-8D-vv6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                <color key="backgroundColor" red="0.36862745098039218" green="0.60784313725490191" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="ohN-my-lUQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" backgroundImage="button.png">
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadcast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsK-Mk-TeG">
-                                <rect key="frame" x="148" y="37" width="78" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vw5-nR-qHm">
-                                <rect key="frame" x="16" y="37" width="16" height="22"/>
-                                <state key="normal" image="backArrow.png"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="WT6-nT-fPa"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-XQ-ElT">
                                 <rect key="frame" x="34" y="153" width="307" height="307"/>
@@ -128,18 +143,40 @@
                                     <action selector="qrButton:" destination="7oJ-fz-6aJ" eventType="touchUpInside" id="Dun-rO-axP"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" backIndicatorImage="Backward arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="7VV-eT-2Bu">
+                                <rect key="frame" x="0.0" y="40" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.2901960784" green="0.60392156860000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="BroadCast" id="SJA-VC-Jee">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="XFR-cW-06k">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vw5-nR-qHm">
+                                                <rect key="frame" x="16" y="11" width="16" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="backArrow.png"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="WT6-nT-fPa"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oQD-ik-TEc" firstAttribute="trailing" secondItem="jQ0-GH-FEU" secondAttribute="trailing" id="2QK-93-Py4"/>
+                            <constraint firstItem="ROY-8D-vv6" firstAttribute="leading" secondItem="jQ0-GH-FEU" secondAttribute="leading" id="C8E-fY-AEE"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="top" secondItem="duN-jh-DbU" secondAttribute="top" id="CKl-pz-miZ"/>
+                            <constraint firstItem="ROY-8D-vv6" firstAttribute="trailing" secondItem="jQ0-GH-FEU" secondAttribute="trailing" id="Dwe-38-uBJ"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leading" id="IU1-eC-HKj"/>
-                            <constraint firstItem="vw5-nR-qHm" firstAttribute="top" secondItem="jQ0-GH-FEU" secondAttribute="top" constant="17" id="KMv-SS-ZhV"/>
                             <constraint firstItem="oQD-ik-TEc" firstAttribute="bottom" secondItem="duN-jh-DbU" secondAttribute="bottomMargin" id="YdW-Op-mG8"/>
                             <constraint firstItem="oQD-ik-TEc" firstAttribute="leading" secondItem="jQ0-GH-FEU" secondAttribute="leading" id="nRA-tB-kl6"/>
-                            <constraint firstItem="ROY-8D-vv6" firstAttribute="centerX" secondItem="NsK-Mk-TeG" secondAttribute="centerX" id="xea-WI-ynY"/>
-                            <constraint firstItem="vw5-nR-qHm" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leadingMargin" id="xyW-cq-HfE"/>
-                            <constraint firstItem="vw5-nR-qHm" firstAttribute="top" secondItem="NsK-Mk-TeG" secondAttribute="top" id="yem-0U-PmF"/>
+                            <constraint firstItem="ROY-8D-vv6" firstAttribute="top" secondItem="duN-jh-DbU" secondAttribute="top" id="ugj-yN-uKR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jQ0-GH-FEU"/>
                     </view>
@@ -148,6 +185,7 @@
                         <outlet property="headerImage" destination="ROY-8D-vv6" id="bKJ-8x-qRl"/>
                         <outlet property="qrButton" destination="CJ4-6d-bey" id="fao-Ib-ENx"/>
                         <outlet property="qrImage" destination="dkE-XQ-ElT" id="gKY-8W-w5G"/>
+                        <outlet property="titleBar" destination="7VV-eT-2Bu" id="fc0-0N-Ex7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9o-qI-oTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -157,22 +195,69 @@
         <!--Load View Controller-->
         <scene sceneID="ybc-Dj-zum">
             <objects>
-                <viewController id="lNz-dr-1fJ" customClass="loadViewController" customModule="liveStream" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loadcontroller" id="lNz-dr-1fJ" customClass="loadViewController" customModule="liveStream" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPd-Uz-hT9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qee-sM-VQV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.60784313729999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="gXd-W7-y67"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" backIndicatorImage="Backward arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="eKI-Jw-Yvo">
+                                <rect key="frame" x="0.0" y="40" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.2901960784" green="0.60392156860000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Viewing Livestream" id="PVx-l5-cst">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="7jG-Z8-bym">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nlw-sI-XNm">
+                                                <rect key="frame" x="16" y="11" width="16" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="backArrow.png"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="WIz-eH-3IF"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qee-sM-VQV" firstAttribute="leading" secondItem="ktL-8L-M9r" secondAttribute="leading" id="Mkm-FU-pUA"/>
+                            <constraint firstItem="Qee-sM-VQV" firstAttribute="trailing" secondItem="ktL-8L-M9r" secondAttribute="trailing" id="vTS-oI-OZO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ktL-8L-M9r"/>
                     </view>
+                    <connections>
+                        <outlet property="topBar" destination="eKI-Jw-Yvo" id="GLc-R5-SNC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYD-Z8-01B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-847" y="-1"/>
+            <point key="canvasLocation" x="1598" y="830"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Backward arrow.png" width="16" height="16"/>
         <image name="Rectangle 542.png" width="375" height="56"/>
         <image name="backArrow.png" width="16" height="16"/>
         <image name="button.png" width="375" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WIz-eH-3IF"/>
+    </inferredMetricsTieBreakers>
 </document>
