@@ -84,10 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQD-ik-TEc">
-                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Qa7-Wm-jXQ"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Text!" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -116,14 +113,30 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="WT6-nT-fPa"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-XQ-ElT">
+                                <rect key="frame" x="34" y="153" width="307" height="307"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJ4-6d-bey">
+                                <rect key="frame" x="34" y="458" width="307" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Dismiss" backgroundImage="Rectangle 542.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="qrButton:" destination="7oJ-fz-6aJ" eventType="touchUpInside" id="Dun-rO-axP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oQD-ik-TEc" firstAttribute="trailing" secondItem="jQ0-GH-FEU" secondAttribute="trailing" id="2QK-93-Py4"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="top" secondItem="duN-jh-DbU" secondAttribute="top" id="CKl-pz-miZ"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leading" id="IU1-eC-HKj"/>
                             <constraint firstItem="vw5-nR-qHm" firstAttribute="top" secondItem="jQ0-GH-FEU" secondAttribute="top" constant="17" id="KMv-SS-ZhV"/>
-                            <constraint firstItem="oQD-ik-TEc" firstAttribute="bottom" secondItem="jQ0-GH-FEU" secondAttribute="bottom" id="Obe-nc-kl7"/>
-                            <constraint firstItem="oQD-ik-TEc" firstAttribute="leading" secondItem="ROY-8D-vv6" secondAttribute="leading" id="UfO-p2-a0t"/>
+                            <constraint firstItem="oQD-ik-TEc" firstAttribute="bottom" secondItem="duN-jh-DbU" secondAttribute="bottomMargin" id="YdW-Op-mG8"/>
+                            <constraint firstItem="oQD-ik-TEc" firstAttribute="leading" secondItem="jQ0-GH-FEU" secondAttribute="leading" id="nRA-tB-kl6"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="centerX" secondItem="NsK-Mk-TeG" secondAttribute="centerX" id="xea-WI-ynY"/>
                             <constraint firstItem="vw5-nR-qHm" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leadingMargin" id="xyW-cq-HfE"/>
                             <constraint firstItem="vw5-nR-qHm" firstAttribute="top" secondItem="NsK-Mk-TeG" secondAttribute="top" id="yem-0U-PmF"/>
@@ -133,6 +146,8 @@
                     <connections>
                         <outlet property="broadcastButton" destination="oQD-ik-TEc" id="V3y-uU-Gnp"/>
                         <outlet property="headerImage" destination="ROY-8D-vv6" id="bKJ-8x-qRl"/>
+                        <outlet property="qrButton" destination="CJ4-6d-bey" id="fao-Ib-ENx"/>
+                        <outlet property="qrImage" destination="dkE-XQ-ElT" id="gKY-8W-w5G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9o-qI-oTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,6 +171,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle 542.png" width="375" height="56"/>
         <image name="backArrow.png" width="16" height="16"/>
         <image name="button.png" width="375" height="56"/>
     </resources>
