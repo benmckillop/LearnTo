@@ -4,7 +4,7 @@ import Alamofire
 import SwiftyJSON
 import QRCode
 
-class ViewController: UIViewController, BambuserViewDelegate {
+class ConstrainedViewController: UIViewController, BambuserViewDelegate {
     
     var bambuserView : BambuserView
     
@@ -28,18 +28,17 @@ class ViewController: UIViewController, BambuserViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         bambuserView.orientation = UIApplication.shared.statusBarOrientation
         self.view.addSubview(bambuserView.view)
-        broadcastButton.addTarget(self, action: #selector(ViewController.broadcast), for: UIControlEvents.touchUpInside)
-        broadcastButton.setTitle("Broadcast", for: UIControlState.normal)
-        qrButton.setTitle("Dismiss", for: UIControlState.normal)
-        self.view.addSubview(broadcastButton)
-        qrButton.isHidden = true
+//        broadcastButton.addTarget(self, action: #selector(ViewController.broadcast), for: UIControlEvents.touchUpInside)
+//        broadcastButton.setTitle("Broadcast", for: UIControlState.normal)
+//        qrButton.setTitle("Dismiss", for: UIControlState.normal)
+//        self.view.addSubview(broadcastButton)
+//        qrButton.isHidden = true
     }
     
     override func viewWillLayoutSubviews() {
         var statusBarOffset : CGFloat = 0.0
         statusBarOffset = CGFloat(self.topLayoutGuide.length)
         bambuserView.previewFrame = CGRect(x: 0.0, y: 0.0 + statusBarOffset, width: self.view.bounds.size.width, height: self.view.bounds.size.height - statusBarOffset)
-        //broadcastButton.
     }
     
     //
@@ -60,9 +59,12 @@ class ViewController: UIViewController, BambuserViewDelegate {
         self.view.addSubview(qrButton)
         self.view.addSubview(qrImage)
         
-       
-        qrImage.isHidden = false
-        qrButton.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.qrImage.isHidden = false
+            self.qrButton.isHidden = false
+        }
+        //        qrImage.isHidden = false
+        //        qrButton.isHidden = false
     }
     
     @IBAction func qrButton(_ sender: Any) {
@@ -88,13 +90,13 @@ class ViewController: UIViewController, BambuserViewDelegate {
             "Accept": "aapplication/vnd.bambuser.v1+json",
             "Content-Type": "application/json"
         ]
-     
+        
         Alamofire.request("https://api.irisplatform.io/broadcasts", headers: headers).responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 
                 var test = [Int:String] ()
-
+                
                 for items in (swiftyJsonVar["results"]) {
                     
                     let (_, data) = items
@@ -110,7 +112,7 @@ class ViewController: UIViewController, BambuserViewDelegate {
             }
         }
     }
- 
+    
     //generates qr code so that the signed url can be scanned by other phone
     func generateQRCode(from string: String) -> UIImage? {
         let data = string.data(using: String.Encoding.ascii)
@@ -125,7 +127,7 @@ class ViewController: UIViewController, BambuserViewDelegate {
         }
         return nil
     }
-
+    
     //stops broadcast and sets the button back to normal
     func broadcastStopped() {
         NSLog("Received broadcastStopped signal")
