@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1BA06921029E1E00CAB819 /* Screen Shot 2018-07-20 at 15.47.41.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1BA06821029E1E00CAB819 /* Screen Shot 2018-07-20 at 15.47.41.png */; };
+		2B1BA06B21029E3000CAB819 /* color_logo_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1BA06A21029E2F00CAB819 /* color_logo_transparent.png */; };
 		2B1E9C4920FE6A8C005FCBD0 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9C4820FE6A8C005FCBD0 /* LoadViewController.swift */; };
 		2B1E9C5820FE7631005FCBD0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E9C4F20FE7631005FCBD0 /* button.png */; };
 		2B1E9C5920FE7631005FCBD0 /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E9C5020FE7631005FCBD0 /* backArrow.png */; };
@@ -21,10 +23,7 @@
 		2B1E9CAB20FFDB29005FCBD0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9C9D20FFDB17005FCBD0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B1E9CC820FFEB68005FCBD0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */; };
 		2B1E9CC920FFEB68005FCBD0 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CBB20FFEB3E005FCBD0 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2B1E9CD821000A4A005FCBD0 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CD5210009B5005FCBD0 /* QRCode.framework */; };
-		2B1E9CD921000A4A005FCBD0 /* QRCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E9CD5210009B5005FCBD0 /* QRCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B1E9D1921025218005FCBD0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */; };
-		2B1E9D1B2102627A005FCBD0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9D1A2102627A005FCBD0 /* DetailsViewController.swift */; };
 		2B41232620F8581600F9523A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232520F8581600F9523A /* AppDelegate.swift */; };
 		2B41232820F8581600F9523A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232720F8581600F9523A /* ViewController.swift */; };
 		2B41232B20F8581600F9523A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41232920F8581600F9523A /* Main.storyboard */; };
@@ -161,34 +160,6 @@
 			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
 			remoteInfo = "SwiftyJSON iOS";
 		};
-		2B1E9CD2210009B5005FCBD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4D248F071A751C3700E44E6B;
-			remoteInfo = Example;
-		};
-		2B1E9CD4210009B5005FCBD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4D248F311A751C7800E44E6B;
-			remoteInfo = QRCode;
-		};
-		2B1E9CD6210009B5005FCBD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4D248F3B1A751C7800E44E6B;
-			remoteInfo = QRCodeTests;
-		};
-		2B1E9CDA21000A4A005FCBD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D248F301A751C7800E44E6B;
-			remoteInfo = QRCode;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -198,7 +169,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B1E9CD921000A4A005FCBD0 /* QRCode.framework in Embed Frameworks */,
 				2B1E9CC920FFEB68005FCBD0 /* SwiftyJSON.framework in Embed Frameworks */,
 				2B1E9CAB20FFDB29005FCBD0 /* Alamofire.framework in Embed Frameworks */,
 			);
@@ -208,6 +178,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B1BA05D2102992F00CAB819 /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		2B1BA05E2102992F00CAB819 /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40.png; sourceTree = "<group>"; };
+		2B1BA05F2102992F00CAB819 /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87.png; sourceTree = "<group>"; };
+		2B1BA0602102992F00CAB819 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
+		2B1BA0612102993000CAB819 /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60.png; sourceTree = "<group>"; };
+		2B1BA0622102993000CAB819 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		2B1BA0632102993000CAB819 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		2B1BA0642102993000CAB819 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		2B1BA0652102993000CAB819 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
+		2B1BA0662102993000CAB819 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
+		2B1BA0672102993000CAB819 /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180.png; sourceTree = "<group>"; };
+		2B1BA06821029E1E00CAB819 /* Screen Shot 2018-07-20 at 15.47.41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2018-07-20 at 15.47.41.png"; path = "../../Screen Shot 2018-07-20 at 15.47.41.png"; sourceTree = "<group>"; };
+		2B1BA06A21029E2F00CAB819 /* color_logo_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = color_logo_transparent.png; path = "../../Belfast Labs Branding/png/color_logo_transparent.png"; sourceTree = "<group>"; };
 		2B1E9C4220FE6709005FCBD0 /* libbambuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbambuser.h; sourceTree = "<group>"; };
 		2B1E9C4320FE6739005FCBD0 /* libbambuserplayer-constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libbambuserplayer-constants.h"; sourceTree = "<group>"; };
 		2B1E9C4420FE673A005FCBD0 /* BambuserViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BambuserViewDelegate.h; sourceTree = "<group>"; };
@@ -227,9 +210,7 @@
 		2B1E9C5720FE7631005FCBD0 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		2B1E9C9120FFDB17005FCBD0 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
-		2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QRCode.xcodeproj; path = "../../Downloads/QRCode-master 2/QRCode.xcodeproj"; sourceTree = "<group>"; };
 		2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
-		2B1E9D1A2102627A005FCBD0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		2B41232220F8581600F9523A /* liveStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liveStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B41232520F8581600F9523A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B41232720F8581600F9523A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -269,7 +250,6 @@
 				2B41234F20F858CC00F9523A /* libz.tbd in Frameworks */,
 				2B41234D20F858C200F9523A /* AudioToolbox.framework in Frameworks */,
 				2B41234B20F858B800F9523A /* AVFoundation.framework in Frameworks */,
-				2B1E9CD821000A4A005FCBD0 /* QRCode.framework in Frameworks */,
 				2B41234920F858AF00F9523A /* CoreGraphics.framework in Frameworks */,
 				2B41234720F858A900F9523A /* CoreLocation.framework in Frameworks */,
 				2B41234520F8589600F9523A /* CoreMedia.framework in Frameworks */,
@@ -287,6 +267,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1BA05C2102991E00CAB819 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2B1BA06A21029E2F00CAB819 /* color_logo_transparent.png */,
+				2B1BA06821029E1E00CAB819 /* Screen Shot 2018-07-20 at 15.47.41.png */,
+				2B1BA05D2102992F00CAB819 /* 29.png */,
+				2B1BA05E2102992F00CAB819 /* 40.png */,
+				2B1BA0602102992F00CAB819 /* 57.png */,
+				2B1BA0622102993000CAB819 /* 58.png */,
+				2B1BA0612102993000CAB819 /* 60.png */,
+				2B1BA0632102993000CAB819 /* 80.png */,
+				2B1BA05F2102992F00CAB819 /* 87.png */,
+				2B1BA0652102993000CAB819 /* 114.png */,
+				2B1BA0642102993000CAB819 /* 120.png */,
+				2B1BA0672102993000CAB819 /* 180.png */,
+				2B1BA0662102993000CAB819 /* 1024.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		2B1E9C4E20FE7612005FCBD0 /* Design */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,16 +331,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B1E9CCD210009B4005FCBD0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2B1E9CD3210009B5005FCBD0 /* Example.app */,
-				2B1E9CD5210009B5005FCBD0 /* QRCode.framework */,
-				2B1E9CD7210009B5005FCBD0 /* QRCodeTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2B1E9D02210133D2005FCBD0 /* Bambuser */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,8 +341,8 @@
 		2B41231920F8581600F9523A = {
 			isa = PBXGroup;
 			children = (
+				2B1BA05C2102991E00CAB819 /* Icons */,
 				2B1E9D02210133D2005FCBD0 /* Bambuser */,
-				2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */,
 				2B1E9CAF20FFEB3E005FCBD0 /* SwiftyJSON.xcodeproj */,
 				2B1E9C9120FFDB17005FCBD0 /* Alamofire.xcodeproj */,
 				2B1E9C4E20FE7612005FCBD0 /* Design */,
@@ -383,14 +373,13 @@
 				2B1E9C4720FE673A005FCBD0 /* libbambuserplayer.h */,
 				2B41235820F859A600F9523A /* libbambuser-bridge.h */,
 				2B41232520F8581600F9523A /* AppDelegate.swift */,
-				2B41232720F8581600F9523A /* ViewController.swift */,
-				2B41232920F8581600F9523A /* Main.storyboard */,
-				2B41232C20F8581800F9523A /* Assets.xcassets */,
 				2B41232E20F8581800F9523A /* LaunchScreen.storyboard */,
 				2B41233120F8581800F9523A /* Info.plist */,
+				2B41232C20F8581800F9523A /* Assets.xcassets */,
+				2B41232920F8581600F9523A /* Main.storyboard */,
+				2B41232720F8581600F9523A /* ViewController.swift */,
 				2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */,
 				2B1E9C4820FE6A8C005FCBD0 /* LoadViewController.swift */,
-				2B1E9D1A2102627A005FCBD0 /* DetailsViewController.swift */,
 			);
 			path = liveStream;
 			sourceTree = "<group>";
@@ -445,7 +434,6 @@
 			dependencies = (
 				2B1E9CAD20FFDB29005FCBD0 /* PBXTargetDependency */,
 				2B1E9CCB20FFEB68005FCBD0 /* PBXTargetDependency */,
-				2B1E9CDB21000A4A005FCBD0 /* PBXTargetDependency */,
 			);
 			name = liveStream;
 			productName = liveStream;
@@ -482,10 +470,6 @@
 				{
 					ProductGroup = 2B1E9C9220FFDB17005FCBD0 /* Products */;
 					ProjectRef = 2B1E9C9120FFDB17005FCBD0 /* Alamofire.xcodeproj */;
-				},
-				{
-					ProductGroup = 2B1E9CCD210009B4005FCBD0 /* Products */;
-					ProjectRef = 2B1E9CCC210009B4005FCBD0 /* QRCode.xcodeproj */;
 				},
 				{
 					ProductGroup = 2B1E9CB020FFEB3E005FCBD0 /* Products */;
@@ -598,27 +582,6 @@
 			remoteRef = 2B1E9CC620FFEB3E005FCBD0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2B1E9CD3210009B5005FCBD0 /* Example.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Example.app;
-			remoteRef = 2B1E9CD2210009B5005FCBD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2B1E9CD5210009B5005FCBD0 /* QRCode.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = QRCode.framework;
-			remoteRef = 2B1E9CD4210009B5005FCBD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2B1E9CD7210009B5005FCBD0 /* QRCodeTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = QRCodeTests.xctest;
-			remoteRef = 2B1E9CD6210009B5005FCBD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -636,7 +599,9 @@
 				2B1E9C5F20FE7631005FCBD0 /* Rectangle 542@3x.png in Resources */,
 				2B41232B20F8581600F9523A /* Main.storyboard in Resources */,
 				2B41235320F858FB00F9523A /* prebuilt in Resources */,
+				2B1BA06921029E1E00CAB819 /* Screen Shot 2018-07-20 at 15.47.41.png in Resources */,
 				2B1E9C5D20FE7631005FCBD0 /* Backward arrow@3x.png in Resources */,
+				2B1BA06B21029E3000CAB819 /* color_logo_transparent.png in Resources */,
 				2B1E9C5820FE7631005FCBD0 /* button.png in Resources */,
 				2B1E9C5A20FE7631005FCBD0 /* Merged bar@2x.png in Resources */,
 			);
@@ -674,7 +639,6 @@
 				2B41232620F8581600F9523A /* AppDelegate.swift in Sources */,
 				2B1E9C4920FE6A8C005FCBD0 /* LoadViewController.swift in Sources */,
 				2B1E9D1921025218005FCBD0 /* ScannerViewController.swift in Sources */,
-				2B1E9D1B2102627A005FCBD0 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,11 +654,6 @@
 			isa = PBXTargetDependency;
 			name = "SwiftyJSON iOS";
 			targetProxy = 2B1E9CCA20FFEB68005FCBD0 /* PBXContainerItemProxy */;
-		};
-		2B1E9CDB21000A4A005FCBD0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = QRCode;
-			targetProxy = 2B1E9CDA21000A4A005FCBD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -841,6 +800,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53NPQPNVZN;
 				INFOPLIST_FILE = liveStream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -854,7 +814,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/benmckillop/Desktop/liveStream/liveStream/libbambuser-bridge.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -867,6 +827,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53NPQPNVZN;
 				INFOPLIST_FILE = liveStream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -880,7 +841,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/benmckillop/Desktop/liveStream/liveStream/libbambuser-bridge.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

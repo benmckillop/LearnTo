@@ -8,6 +8,7 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     var rewindButton: UIButton
     var scannedCode:String?
     
+    @IBOutlet weak var topBox: UIButton!
     @IBOutlet weak var topBar: UINavigationBar!
     
     required init?(coder aDecoder: NSCoder) {
@@ -23,23 +24,12 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
         view.bringSubview(toFront: topBar)
         bambuserPlayer.delegate = self
         bambuserPlayer.applicationId = "EE5UFnBB5YbqBXvHFFM4MA"
-//        var broadcastID: String
-//        print(scannedCode!)
-        
-        
-        
         let broadcastID = UserDefaults.standard.string(forKey: "ID") ?? ""
-        
-  
-        
-        
         let video = broadcastID
         bambuserPlayer.playVideo(video)
         self.view.addSubview(bambuserPlayer)
-    }
-    
-    @objc func rewind() {
-        bambuserPlayer.seek(to: 0.0);
+        view.bringSubview(toFront: topBox)
+        view.bringSubview(toFront: topBar)
     }
     
     override func viewWillLayoutSubviews() {
@@ -52,22 +42,7 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func playbackStarted() {
-        playButton.isEnabled = false
-        pauseButton.isEnabled = true
-    }
-    
-    func playbackPaused() {
-        playButton.isEnabled = true
-        pauseButton.isEnabled = false
-    }
-    
-    func playbackStopped() {
-        playButton.isEnabled = true
-        pauseButton.isEnabled = false
-    }
-    
+
     func videoLoadFail() {
         NSLog("Failed to load video for %@", bambuserPlayer.resourceUri);
     }

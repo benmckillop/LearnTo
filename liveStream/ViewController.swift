@@ -2,7 +2,6 @@ import UIKit
 import CoreFoundation
 import Alamofire
 import SwiftyJSON
-import QRCode
 
 class ViewController: UIViewController, BambuserViewDelegate {
     
@@ -19,10 +18,7 @@ class ViewController: UIViewController, BambuserViewDelegate {
         bambuserView.applicationId = "EE5UFnBB5YbqBXvHFFM4MA"
         super.init(coder: aDecoder)
         bambuserView.delegate = self;
-        
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,27 +26,28 @@ class ViewController: UIViewController, BambuserViewDelegate {
         bambuserView.orientation = UIApplication.shared.statusBarOrientation
         self.view.addSubview(bambuserView.view)
         broadcastButton.addTarget(self, action: #selector(ViewController.broadcast), for: UIControlEvents.touchUpInside)
-        broadcastButton.setTitle("Broadcast", for: UIControlState.normal)
+        broadcastButton.setTitle("Start", for: UIControlState.normal)
         qrButton.setTitle("Dismiss", for: UIControlState.normal)
         self.view.addSubview(broadcastButton)
+        
+        broadcastButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        broadcastButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        broadcastButton.heightAnchor.constraint(equalToConstant: 90).isActive = true
+        broadcastButton.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         qrButton.isHidden = true
         view.bringSubview(toFront: headerImage)
         view.bringSubview(toFront: titleBar)
-
+        
     }
     
     override func viewWillLayoutSubviews() {
         var statusBarOffset : CGFloat = 0.0
         statusBarOffset = CGFloat(self.topLayoutGuide.length)
         bambuserView.previewFrame = CGRect(x: 0.0, y: 0.0 + statusBarOffset, width: self.view.bounds.size.width, height: self.view.bounds.size.height - statusBarOffset)
-        //broadcastButton.
     }
-    
-    //
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //enables the livestream to start broadcasting
@@ -63,8 +60,6 @@ class ViewController: UIViewController, BambuserViewDelegate {
         httpGet()
         self.view.addSubview(qrButton)
         self.view.addSubview(qrImage)
-        
-       
         qrImage.isHidden = false
         qrButton.isHidden = false
     }
@@ -73,10 +68,7 @@ class ViewController: UIViewController, BambuserViewDelegate {
         qrImage.isHidden = true
         qrButton.isHidden = true
     }
-    
-    
-    
-    
+
     //changes whilst livestream is active to enable the stop button
     func broadcastStarted() {
         NSLog("Received broadcastStarted signal")
