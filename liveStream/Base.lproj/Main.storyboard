@@ -20,17 +20,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC2-Lq-u5i">
-                                <rect key="frame" x="122" y="280" width="130" height="30"/>
+                                <rect key="frame" x="31" y="257" width="313" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click to Broadcast!"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Click to Broadcast!" backgroundImage="Rectangle 542.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="7oJ-fz-6aJ" kind="presentation" id="4bQ-oE-292"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYi-HU-2vS">
-                                <rect key="frame" x="105" y="318" width="165" height="30"/>
+                                <rect key="frame" x="31" y="353" width="313" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click to view Broadcast!"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Click to view Broadcast!" backgroundImage="Merged bar.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="QxU-r1-UkL" kind="presentation" id="IbU-q8-qub"/>
                                 </connections>
@@ -42,6 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="33.733133433283363"/>
         </scene>
         <!--Scanner View Controller-->
         <scene sceneID="SGN-VH-cwP">
@@ -56,7 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4F-8K-3BY">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4F-8K-3BY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                 <color key="backgroundColor" red="0.36862745099999999" green="0.60784313729999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -83,7 +90,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="backArrow.png"/>
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="3Cr-gd-x1h"/>
+                                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorView="GLV-g4-5YK" id="9X5-3U-UR7">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -96,11 +105,12 @@
                     </view>
                     <connections>
                         <outlet property="topBar" destination="6T7-sU-DC8" id="iWL-vG-uW7"/>
+                        <outlet property="topBox" destination="E4F-8K-3BY" id="kO9-sz-BOE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJi-cs-UjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="1387"/>
+            <point key="canvasLocation" x="818" y="830"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5qz-9U-zeW">
@@ -152,7 +162,7 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="BroadCast" id="SJA-VC-Jee">
+                                    <navigationItem title="Starting Livestream" id="SJA-VC-Jee">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="XFR-cW-06k">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vw5-nR-qHm">
                                                 <rect key="frame" x="16" y="11" width="16" height="22"/>
@@ -200,7 +210,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qee-sM-VQV">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qee-sM-VQV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                 <color key="backgroundColor" red="0.36862745099999999" green="0.60784313729999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -243,7 +253,8 @@
                         <viewLayoutGuide key="safeArea" id="ktL-8L-M9r"/>
                     </view>
                     <connections>
-                        <outlet property="topBar" destination="eKI-Jw-Yvo" id="GLc-R5-SNC"/>
+                        <outlet property="topBar" destination="eKI-Jw-Yvo" id="Jxz-5i-hIy"/>
+                        <outlet property="topBox" destination="Qee-sM-VQV" id="yKQ-S0-t6c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYD-Z8-01B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,11 +264,12 @@
     </scenes>
     <resources>
         <image name="Backward arrow.png" width="16" height="16"/>
+        <image name="Merged bar.png" width="375" height="68"/>
         <image name="Rectangle 542.png" width="375" height="56"/>
         <image name="backArrow.png" width="16" height="16"/>
         <image name="button.png" width="375" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WIz-eH-3IF"/>
+        <segue reference="WT6-nT-fPa"/>
     </inferredMetricsTieBreakers>
 </document>

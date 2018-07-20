@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  BarcodeScanner
-//
-//  Created by Mikheil Gotiashvili on 7/14/17.
-//  Copyright © 2017 Mikheil Gotiashvili. All rights reserved.
-//
-
 import UIKit
 import AVFoundation
 import AudioToolbox
@@ -15,22 +7,25 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     var captureDevice:AVCaptureDevice?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var captureSession:AVCaptureSession?
-    
+
+    @IBOutlet weak var topBox: UIButton!
     @IBOutlet weak var topBar: UINavigationBar!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        navigationItem.title = "Scanner"
         view.backgroundColor = .white
+        view.bringSubview(toFront: topBox)
         view.bringSubview(toFront: topBar)
         codeLabel.text = "Please bring QR code into view"
         codeLabel.textAlignment = .center
-        
-        
-        
         captureDevice = AVCaptureDevice.default(for: .video)
+        topBox.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        topBox.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        topBox.heightAnchor.constraint(equalToConstant: 90).isActive = true
+        topBox.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        
+
+       
         // Check if captureDevice returns a value and unwrap it
         if let captureDevice = captureDevice {
             
@@ -53,19 +48,22 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                     videoPreviewLayer?.videoGravity = .resizeAspectFill
                 videoPreviewLayer?.frame = view.layer.bounds
                 view.layer.addSublayer(videoPreviewLayer!)
+                view.bringSubview(toFront: topBox)
+                view.bringSubview(toFront: topBar)
+                
+
+                
                 
             } catch {
                 print("Error Device Input")
             }
-            
         }
         
         view.addSubview(codeLabel)
             codeLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
             codeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            codeLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+            codeLabel.heightAnchor.constraint(equalToConstant: 70).isActive = true
             codeLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -127,25 +125,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         
         // Stop capturing and hence stop executing metadataOutput function over and over again
         captureSession?.stopRunning()
-        
-//        // Call the function which performs navigation and pass the code string value we just detected
-//        presentDestinationViewController(scannedCode: stringCodeValue)
-        
-//        UserDefaults.standard.set(stringCodeValue, forKey: "ID")
+
         
     }
-    
-//    func displayDetailsViewController(scannedCode: String) {
-//        let detailsViewController = DetailsViewController()
-//        detailsViewController.scannedCode = scannedCode
-//        //navigationController?.pushViewController(detailsViewController, animated: true)
-//        present(detailsViewController, animated: true, completion: nil)
-//    }
-//
-
-    
-    
-    
-    
-    
 }
