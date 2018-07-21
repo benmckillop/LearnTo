@@ -58,8 +58,9 @@ class ViewController: UIViewController, BambuserViewDelegate {
         broadcastButton.addTarget(bambuserView, action: #selector(bambuserView.stopBroadcasting), for: UIControlEvents.touchUpInside)
         bambuserView.startBroadcasting()
         httpGet()
-        self.view.addSubview(qrButton)
+        
         self.view.addSubview(qrImage)
+        self.view.addSubview(qrButton)
         qrImage.isHidden = false
         qrButton.isHidden = false
     }

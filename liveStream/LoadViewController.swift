@@ -8,6 +8,7 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     var rewindButton: UIButton
     var scannedCode:String?
     
+    @IBOutlet weak var screenshotButton: UIButton!
     @IBOutlet weak var topBox: UIButton!
     @IBOutlet weak var topBar: UINavigationBar!
     
@@ -35,7 +36,7 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     override func viewWillLayoutSubviews() {
         let statusBarOffset = self.topLayoutGuide.length
         bambuserPlayer.frame = CGRect(x: 0, y: 0 + statusBarOffset, width: self.view.bounds.size.width, height: self.view.bounds.size.height - statusBarOffset)
- 
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,4 +47,16 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     func videoLoadFail() {
         NSLog("Failed to load video for %@", bambuserPlayer.resourceUri);
     }
+    
+//    @objc func screenShotMethod() {
+//        //Create the UIImage
+//        UIGraphicsBeginImageContext(bambuserPlayer.frame.size)
+//        bambuserPlayer.layer.render(in: UIGraphicsGetCurrentContext()!)
+//        let image = UIGraphicsGetImageFromCurrentImageContext()
+//        UIGraphicsEndImageContext()
+//
+//        //Save it to the camera roll
+//        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+//    }
+
 }

@@ -18,23 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-07-20 at 15.47.41.png" translatesAutoresizingMaskIntoConstraints="NO" id="R86-6A-O4d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="R86-6A-O4d">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_logo_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="tOP-gz-zju">
-                                <rect key="frame" x="55" y="319" width="266" height="160"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tOP-gz-zju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="275" id="D0O-b3-LxS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tOP-gz-zju" secondAttribute="bottom" constant="299" id="L8U-ef-3OK"/>
                             <constraint firstAttribute="trailing" secondItem="R86-6A-O4d" secondAttribute="trailing" id="dSj-bC-gyd"/>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fld-wU-gpd"/>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hhG-Yc-x4C"/>
                             <constraint firstAttribute="bottom" secondItem="R86-6A-O4d" secondAttribute="bottom" id="mu9-xZ-Lnp"/>
-                            <constraint firstItem="tOP-gz-zju" firstAttribute="centerX" secondItem="R86-6A-O4d" secondAttribute="centerX" id="rpu-io-le3"/>
-                            <constraint firstItem="tOP-gz-zju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="vNO-Tl-y64"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -45,7 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2018-07-20 at 15.47.41.png" width="332" height="186"/>
-        <image name="color_logo_transparent.png" width="3170" height="2125"/>
+        <image name="Rectangle 1.png" width="7194" height="5747"/>
     </resources>
 </document>
