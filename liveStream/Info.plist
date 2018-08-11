@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>using this for saving photo to library</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>using this for saving photo to library</string>
 	<key>CFBundleDisplayName</key>
 	<string>PhotoLive</string>
 	<key>CFBundleExecutable</key>
@@ -26,8 +30,6 @@
 	<string>in order to save screenshot view</string>
 	<key>NSCameraUsageDescription</key>
 	<string>enables camera use to stream live video</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>enables the microphone to capture sound for the live video</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
