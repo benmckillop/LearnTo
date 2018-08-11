@@ -18,16 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="R86-6A-O4d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen_new.png" translatesAutoresizingMaskIntoConstraints="NO" id="R86-6A-O4d">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="R86-6A-O4d" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3lp-BI-xur"/>
+                            <constraint firstItem="R86-6A-O4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hoo-lJ-LzK"/>
+                            <constraint firstItem="R86-6A-O4d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kdr-jh-HFC"/>
                             <constraint firstAttribute="trailing" secondItem="R86-6A-O4d" secondAttribute="trailing" id="dSj-bC-gyd"/>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fld-wU-gpd"/>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hhG-Yc-x4C"/>
                             <constraint firstAttribute="bottom" secondItem="R86-6A-O4d" secondAttribute="bottom" id="mu9-xZ-Lnp"/>
+                            <constraint firstAttribute="bottom" secondItem="R86-6A-O4d" secondAttribute="bottom" id="z0U-qo-R3R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Rectangle 1.png" width="7194" height="5747"/>
+        <image name="splashscreen_new.png" width="376" height="812"/>
     </resources>
 </document>

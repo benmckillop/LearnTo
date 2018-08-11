@@ -19,10 +19,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         codeLabel.text = "Please bring QR code into view"
         codeLabel.textAlignment = .center
         captureDevice = AVCaptureDevice.default(for: .video)
-        topBox.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        topBox.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        topBox.heightAnchor.constraint(equalToConstant: 90).isActive = true
-        topBox.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         
 
        
@@ -50,10 +46,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                 view.layer.addSublayer(videoPreviewLayer!)
                 view.bringSubview(toFront: topBox)
                 view.bringSubview(toFront: topBar)
-                
-
-                
-                
             } catch {
                 print("Error Device Input")
             }
