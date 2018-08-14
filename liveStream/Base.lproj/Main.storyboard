@@ -231,8 +231,12 @@
                                     <constraint firstAttribute="height" constant="307" id="beR-gc-ytm"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJ4-6d-bey">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJ4-6d-bey">
                                 <rect key="frame" x="34" y="560" width="307" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="cir-hL-zTE"/>
+                                    <constraint firstAttribute="width" constant="307" id="y1x-rK-lSi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Dismiss" backgroundImage="Dismiss Button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -251,6 +255,7 @@
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="trailing" secondItem="jQ0-GH-FEU" secondAttribute="trailing" id="Dwe-38-uBJ"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leading" id="IU1-eC-HKj"/>
                             <constraint firstItem="CJ4-6d-bey" firstAttribute="top" secondItem="dkE-XQ-ElT" secondAttribute="bottom" constant="1" id="LPY-je-p0P"/>
+                            <constraint firstItem="CJ4-6d-bey" firstAttribute="centerX" secondItem="duN-jh-DbU" secondAttribute="centerX" id="NhW-ho-85y"/>
                             <constraint firstItem="oQD-ik-TEc" firstAttribute="bottom" secondItem="duN-jh-DbU" secondAttribute="bottomMargin" id="YdW-Op-mG8"/>
                             <constraint firstItem="ggE-eU-TqF" firstAttribute="trailing" secondItem="duN-jh-DbU" secondAttribute="trailingMargin" id="boq-qb-AFH"/>
                             <constraint firstItem="oQD-ik-TEc" firstAttribute="leading" secondItem="jQ0-GH-FEU" secondAttribute="leading" id="nRA-tB-kl6"/>
