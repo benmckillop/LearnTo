@@ -92,7 +92,6 @@ class ViewController: UIViewController, BambuserViewDelegate {
         qrImage.isHidden = true
         qrButton.isHidden = true
         takePhoto.isHidden = false
-        greyBG.isHidden = true
     }
 
     //changes whilst livestream is active to enable the stop button
@@ -125,10 +124,8 @@ class ViewController: UIViewController, BambuserViewDelegate {
     
     //displays the qr code and button at the same time once the qr code loads
     func showQRCode() {
-        view.bringSubview(toFront: greyBG)
         view.bringSubview(toFront: qrImage)
         view.bringSubview(toFront: qrButton)
-        greyBG.isHidden = false
         qrImage.isHidden = false
         qrButton.isHidden = false
         takePhoto.isHidden = true
