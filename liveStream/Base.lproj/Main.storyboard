@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -164,9 +164,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greyedout.png" translatesAutoresizingMaskIntoConstraints="NO" id="27H-Up-rLE">
-                                <rect key="frame" x="-13" y="-12" width="400" height="839"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQD-ik-TEc">
                                 <rect key="frame" x="0.0" y="678" width="375" height="100"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -221,21 +218,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-XQ-ElT">
-                                <rect key="frame" x="34" y="226" width="307" height="307"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJ4-6d-bey">
-                                <rect key="frame" x="34" y="531" width="307" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Dismiss" backgroundImage="Dismiss Button.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="qrButton:" destination="7oJ-fz-6aJ" eventType="touchUpInside" id="bfX-VU-536"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Io-xv-bEV">
+                                <rect key="frame" x="34" y="223" width="307" height="366"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-XQ-ElT">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="307"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dkE-XQ-ElT" secondAttribute="height" multiplier="1:1" id="bya-Ha-jJm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJ4-6d-bey">
+                                        <rect key="frame" x="0.0" y="307" width="307" height="59"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Dismiss" backgroundImage="Dismiss Button.png">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="qrButton:" destination="7oJ-fz-6aJ" eventType="touchUpInside" id="bfX-VU-536"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-eU-TqF">
                                 <rect key="frame" x="289" y="669" width="70" height="70"/>
                                 <state key="normal" backgroundImage="screenshotbutton.png"/>
@@ -243,38 +246,28 @@
                                     <action selector="takePhoto:" destination="7oJ-fz-6aJ" eventType="touchUpInside" id="hKL-Xe-nCt"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photosaved.png" translatesAutoresizingMaskIntoConstraints="NO" id="wQg-Wg-XkL">
-                                <rect key="frame" x="12" y="197" width="350" height="365"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="oQD-ik-TEc" firstAttribute="trailing" secondItem="jQ0-GH-FEU" secondAttribute="trailing" id="2QK-93-Py4"/>
-                            <constraint firstItem="jQ0-GH-FEU" firstAttribute="trailing" secondItem="wQg-Wg-XkL" secondAttribute="trailing" constant="13" id="7tB-L3-rsh"/>
-                            <constraint firstItem="wQg-Wg-XkL" firstAttribute="leading" secondItem="jQ0-GH-FEU" secondAttribute="leading" constant="12" id="85A-Ge-gCS"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="leading" secondItem="jQ0-GH-FEU" secondAttribute="leading" id="C8E-fY-AEE"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="top" secondItem="duN-jh-DbU" secondAttribute="top" id="CKl-pz-miZ"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="trailing" secondItem="jQ0-GH-FEU" secondAttribute="trailing" id="Dwe-38-uBJ"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leading" id="IU1-eC-HKj"/>
-                            <constraint firstAttribute="bottom" secondItem="27H-Up-rLE" secondAttribute="bottom" constant="-15" id="JAT-Pu-dFo"/>
-                            <constraint firstItem="27H-Up-rLE" firstAttribute="top" secondItem="duN-jh-DbU" secondAttribute="top" constant="-12" id="LWj-CL-Mlj"/>
-                            <constraint firstAttribute="trailing" secondItem="27H-Up-rLE" secondAttribute="trailing" constant="-12" id="WQA-HS-DvL"/>
+                            <constraint firstItem="0Io-xv-bEV" firstAttribute="centerX" secondItem="duN-jh-DbU" secondAttribute="centerX" id="TKq-gC-fvi"/>
                             <constraint firstItem="oQD-ik-TEc" firstAttribute="bottom" secondItem="duN-jh-DbU" secondAttribute="bottomMargin" id="YdW-Op-mG8"/>
+                            <constraint firstItem="0Io-xv-bEV" firstAttribute="centerY" secondItem="duN-jh-DbU" secondAttribute="centerY" id="ZKS-RC-HiM"/>
                             <constraint firstItem="ggE-eU-TqF" firstAttribute="trailing" secondItem="duN-jh-DbU" secondAttribute="trailingMargin" id="boq-qb-AFH"/>
-                            <constraint firstItem="27H-Up-rLE" firstAttribute="leading" secondItem="duN-jh-DbU" secondAttribute="leading" constant="-13" id="kkj-bC-KK4"/>
                             <constraint firstItem="oQD-ik-TEc" firstAttribute="leading" secondItem="jQ0-GH-FEU" secondAttribute="leading" id="nRA-tB-kl6"/>
                             <constraint firstItem="jQ0-GH-FEU" firstAttribute="bottom" secondItem="ggE-eU-TqF" secondAttribute="bottom" constant="39" id="qgn-h4-4Ad"/>
                             <constraint firstItem="ROY-8D-vv6" firstAttribute="top" secondItem="duN-jh-DbU" secondAttribute="top" id="ugj-yN-uKR"/>
-                            <constraint firstItem="wQg-Wg-XkL" firstAttribute="top" secondItem="ROY-8D-vv6" secondAttribute="bottom" constant="58" id="zyW-qF-e8k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jQ0-GH-FEU"/>
                     </view>
                     <connections>
                         <outlet property="broadcastButton" destination="oQD-ik-TEc" id="V3y-uU-Gnp"/>
-                        <outlet property="greyBG" destination="27H-Up-rLE" id="QsG-tc-rIN"/>
                         <outlet property="headerImage" destination="ROY-8D-vv6" id="bKJ-8x-qRl"/>
-                        <outlet property="photoTaken" destination="wQg-Wg-XkL" id="2iG-RE-kx6"/>
                         <outlet property="qrButton" destination="CJ4-6d-bey" id="cuL-QK-ioY"/>
                         <outlet property="qrCodeShowButton" destination="nIg-Kk-o4p" id="joV-Gq-hb0"/>
                         <outlet property="qrImage" destination="dkE-XQ-ElT" id="gKY-8W-w5G"/>
@@ -374,14 +367,12 @@
         <image name="Rectangle Button.png" width="288" height="59"/>
         <image name="TopBar.png" width="376" height="139"/>
         <image name="Topbar no text.png" width="376" height="139"/>
-        <image name="greyedout.png" width="376" height="634"/>
         <image name="greyedoutover.png" width="376" height="812"/>
         <image name="icons8-left-30.png" width="30" height="30"/>
-        <image name="photosaved.png" width="350" height="365"/>
         <image name="qr-code-icon-18-ffffff-25.png" width="25" height="25"/>
         <image name="screenshotbutton.png" width="70" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="khL-TH-1Pq"/>
+        <segue reference="WIz-eH-3IF"/>
     </inferredMetricsTieBreakers>
 </document>
