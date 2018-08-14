@@ -37,7 +37,6 @@ class ViewController: UIViewController, BambuserViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(takePhoto)
-        self.view.addSubview(greyBG)
         qrCodeShowButton.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
         bambuserView.orientation = UIApplication.shared.statusBarOrientation
@@ -57,8 +56,6 @@ class ViewController: UIViewController, BambuserViewDelegate {
         view.bringSubview(toFront: titleBar)
         view.bringSubview(toFront: takePhoto)
         self.qrImage.image = #imageLiteral(resourceName: "loadingt.png")
-        greyBG.isHidden = true
-        photoTaken.isHidden = true
     }
     
     override func viewWillLayoutSubviews() {
@@ -80,7 +77,6 @@ class ViewController: UIViewController, BambuserViewDelegate {
         bambuserView.startBroadcasting()
         self.view.addSubview(qrImage)
         self.view.addSubview(qrButton)
-        greyBG.isHidden = true
     }
     
     //when the broadcast id is recieved, it is used to get the signed url, then to show the qr code
