@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen_new.png" translatesAutoresizingMaskIntoConstraints="NO" id="R86-6A-O4d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splashscreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="R86-6A-O4d">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                         </subviews>
@@ -42,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashscreen_new.png" width="376" height="812"/>
+        <image name="Splashscreen.png" width="1128" height="2436"/>
     </resources>
 </document>
