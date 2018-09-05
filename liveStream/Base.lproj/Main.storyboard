@@ -63,7 +63,7 @@
                                     <segue destination="QxU-r1-UkL" kind="presentation" id="IbU-q8-qub"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopbarLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="cj9-Om-OCI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="cj9-Om-OCI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="139" id="8gj-Hk-F4o"/>
@@ -461,8 +461,8 @@
         <image name="RoundedButton.png" width="288" height="59"/>
         <image name="Save Button.png" width="172" height="59"/>
         <image name="StandardButton.png" width="864" height="177"/>
+        <image name="TopBar.png" width="376" height="140"/>
         <image name="TopImageBar.png" width="344" height="59"/>
-        <image name="TopbarLogo.png" width="1128" height="419"/>
         <image name="TopbarNoText.png" width="1128" height="419"/>
     </resources>
     <inferredMetricsTieBreakers>
