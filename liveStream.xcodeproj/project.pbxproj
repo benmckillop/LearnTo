@@ -65,6 +65,7 @@
 		2BA0CD1A2114E1300093C5BC /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CD192114E1300093C5BC /* WebViewContent.html */; };
 		2BA0CD1E2114EF810093C5BC /* HomescreenVideo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CD1D2114EF800093C5BC /* HomescreenVideo.gif */; };
 		2BA0CD26211504D50093C5BC /* FirstCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0CD25211504D50093C5BC /* FirstCustomSegue.swift */; };
+		2BCAB25C214025E8007D3D0D /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2BCAB25B214025B8007D3D0D /* SF-Pro-Text-Light.otf */; };
 		2BD6CFE4213FDD02009F3C5A /* SaveButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6CFD5213FDCF9009F3C5A /* SaveButton.png */; };
 		2BD6CFE6213FDD02009F3C5A /* HomeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6CFD7213FDCFA009F3C5A /* HomeButton.png */; };
 		2BD6CFED213FDD02009F3C5A /* GreyBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6CFDE213FDCFF009F3C5A /* GreyBackground.png */; };
@@ -164,6 +165,7 @@
 		2BA0CD192114E1300093C5BC /* WebViewContent.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
 		2BA0CD1D2114EF800093C5BC /* HomescreenVideo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HomescreenVideo.gif; sourceTree = "<group>"; };
 		2BA0CD25211504D50093C5BC /* FirstCustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCustomSegue.swift; sourceTree = "<group>"; };
+		2BCAB25B214025B8007D3D0D /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		2BD6CFD5213FDCF9009F3C5A /* SaveButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SaveButton.png; sourceTree = "<group>"; };
 		2BD6CFD7213FDCFA009F3C5A /* HomeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeButton.png; sourceTree = "<group>"; };
 		2BD6CFDE213FDCFF009F3C5A /* GreyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreyBackground.png; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		2B1E9C4E20FE7612005FCBD0 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				2BCAB25B214025B8007D3D0D /* SF-Pro-Text-Light.otf */,
 				2BD6D00221400CB3009F3C5A /* BroadcastOver.png */,
 				2BD6CFFE213FF20C009F3C5A /* RoundedButton.png */,
 				2BD6CFFA213FE989009F3C5A /* TopImageBar.png */,
@@ -445,6 +448,7 @@
 				2B41232B20F8581600F9523A /* Main.storyboard in Resources */,
 				2B356E502102B63F00CCCA5A /* App Icon - 60x60.png in Resources */,
 				2B41235320F858FB00F9523A /* prebuilt in Resources */,
+				2BCAB25C214025E8007D3D0D /* SF-Pro-Text-Light.otf in Resources */,
 				2BD6CFF1213FE228009F3C5A /* BottomBarNoTextTest.png in Resources */,
 				2BD6D00321400CB4009F3C5A /* BroadcastOver.png in Resources */,
 				2BA0CD1A2114E1300093C5BC /* WebViewContent.html in Resources */,
