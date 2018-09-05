@@ -17,18 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splashscreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="R86-6A-O4d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="R86-6A-O4d">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6TF-yL-noQ">
+                                <rect key="frame" x="102" y="291" width="170" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="SSK-ch-yR1"/>
+                                    <constraint firstAttribute="height" constant="230" id="lzA-Pd-iZc"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3lp-BI-xur"/>
+                            <constraint firstItem="6TF-yL-noQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EZo-lq-ZRq"/>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hoo-lJ-LzK"/>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kdr-jh-HFC"/>
+                            <constraint firstItem="6TF-yL-noQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VDt-j2-Fw6"/>
                             <constraint firstAttribute="trailing" secondItem="R86-6A-O4d" secondAttribute="trailing" id="dSj-bC-gyd"/>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fld-wU-gpd"/>
                             <constraint firstItem="R86-6A-O4d" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hhG-Yc-x4C"/>
+                            <constraint firstItem="6TF-yL-noQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lfM-XI-Ie6"/>
+                            <constraint firstItem="6TF-yL-noQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="m3d-nO-3mV"/>
                             <constraint firstAttribute="bottom" secondItem="R86-6A-O4d" secondAttribute="bottom" id="mu9-xZ-Lnp"/>
                             <constraint firstAttribute="bottom" secondItem="R86-6A-O4d" secondAttribute="bottom" id="z0U-qo-R3R"/>
                         </constraints>
@@ -41,6 +52,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Splashscreen.png" width="1128" height="2436"/>
+        <image name="Logo.png" width="565" height="784"/>
+        <image name="SplashScreen.png" width="1128" height="2436"/>
     </resources>
 </document>
