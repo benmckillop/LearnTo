@@ -6,6 +6,7 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     var bambuserPlayer: BambuserPlayer
     var scannedCode:String?
     
+    @IBOutlet weak var bluredView: UIVisualEffectView!
     @IBOutlet weak var broadcastOverPrompt: UIImageView!
     @IBOutlet weak var greyedView: UIImageView!
     @IBOutlet weak var dismissButton: UIButton!
@@ -25,16 +26,16 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-                
         MultiPeer.instance.initialize(serviceType: "livestream")
         MultiPeer.instance.autoConnect()
-        
+
         bambuserPlayer.delegate = self
         bambuserPlayer.applicationId = "EE5UFnBB5YbqBXvHFFM4MA"
         let broadcastID = UserDefaults.standard.string(forKey: "ID") ?? ""
         let video = broadcastID
         bambuserPlayer.playVideo(video)
-    
+        
+        bluredView.isHidden = true
         greyedView.isHidden = true
         broadcastOverPrompt.isHidden = true
         dismissButton.isHidden = true
@@ -61,15 +62,7 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func videoLoadFail() {
-        playbackFinished()
-    }
-    
     func playbackStopped() {
-        playbackFinished()
-    }
-    
-    func playbackPaused() {
         playbackFinished()
     }
     
@@ -79,21 +72,38 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     
     func playbackFinished() {
         view.bringSubview(toFront: greyedView)
+        view.bringSubview(toFront: bluredView)
         view.bringSubview(toFront: broadcastOverPrompt)
         view.bringSubview(toFront: dismissButton)
         
-        greyedView.isHidden = true
-        broadcastOverPrompt.isHidden = true
-        dismissButton.isHidden = true
+        greyedView.isHidden = false
+        bluredView.isHidden = false
+        broadcastOverPrompt.isHidden = false
+        dismissButton.isHidden = false
     }
-    
 
-   
     @IBAction func modalDismissButton(_ sender: Any) {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "home")
         self.present(vc, animated: true, completion: nil)
     }
-
-
-
+    
 }
+
+
+extension loadViewController: MultiPeerDelegate {
+
+    func multiPeer(didReceiveData data: Data, ofType type: UInt32) {
+        switch type {
+        case DataType.image.rawValue:
+            guard let image = data.convert() as? UIImage else { return }
+            print("___________________________image recieved!___________________________")
+            break;
+            
+        default:
+            break;
+        }
+    }
+    func multiPeer(connectedDevicesChanged devices: [String]) {
+    }
+}
+

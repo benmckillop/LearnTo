@@ -15,6 +15,8 @@ class ViewController: UIViewController, BambuserViewDelegate{
     
     var bambuserView : BambuserView
     
+    @IBOutlet weak var bluredView: UIVisualEffectView!
+    @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var dismissImageSaved: UIButton!
     @IBOutlet weak var imageSavedPrompt: UIImageView!
     @IBOutlet weak var photoTakenTopBar: UIButton!
@@ -38,7 +40,6 @@ class ViewController: UIViewController, BambuserViewDelegate{
         bambuserView.applicationId = "EE5UFnBB5YbqBXvHFFM4MA"
         super.init(coder: aDecoder)
         bambuserView.delegate = self
-
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -58,7 +59,6 @@ class ViewController: UIViewController, BambuserViewDelegate{
         super.viewDidLoad()
         
         MultiPeer.instance.delegate = self
-        
         MultiPeer.instance.initialize(serviceType: "livestream")
         MultiPeer.instance.autoConnect()
         
@@ -66,6 +66,7 @@ class ViewController: UIViewController, BambuserViewDelegate{
         takenImageView.isHidden = true
         qrCodeShowButton.isHidden = true
         greyedView.isHidden = true
+        bluredView.isHidden = true
         dismissScreenshotButton.isHidden = true
         saveScreenshotButton.isHidden = true
         photoTakenTopBar.isHidden = true
@@ -85,9 +86,8 @@ class ViewController: UIViewController, BambuserViewDelegate{
         view.bringSubview(toFront: headerImage)
         view.bringSubview(toFront: titleBar)
         self.qrImage.image = #imageLiteral(resourceName: "PleaseWaitScreen.png")
-    
-        
-        
+        exitButton.isHidden = true
+
     }
     
     override func viewWillLayoutSubviews() {
@@ -125,6 +125,7 @@ class ViewController: UIViewController, BambuserViewDelegate{
         qrImage.isHidden = true
         qrButton.isHidden = true
         greyedView.isHidden = true
+        bluredView.isHidden = true
     }
 
     //changes whilst livestream is active to enable the stop button
@@ -156,7 +157,9 @@ class ViewController: UIViewController, BambuserViewDelegate{
     //displays the qr code and button at the same time once the qr code loads
     func showQRCode() {
         greyedView.isHidden = false
+        bluredView.isHidden = false
         view.bringSubview(toFront: greyedView)
+        view.bringSubview(toFront: bluredView)
         view.bringSubview(toFront: qrImage)
         view.bringSubview(toFront: qrButton)
         qrImage.isHidden = false
@@ -184,6 +187,7 @@ class ViewController: UIViewController, BambuserViewDelegate{
                         let Image = self.generateQRCode(from: resourceURI)
                         self.qrImage.image = Image
                         self.qrImage.isHidden = false
+                        MultiPeer.instance.send(object: resourceURI, type: DataType.string.rawValue)
             }
         }
     }
@@ -200,7 +204,6 @@ class ViewController: UIViewController, BambuserViewDelegate{
         self.qrImage.image = #imageLiteral(resourceName: "PleaseWaitScreen.png")
         broadcastButton.setBackgroundImage(#imageLiteral(resourceName: "BottomBarNoTextTest.png"), for: UIControlState.normal)
     }
-
    
     @IBAction func takePhoto(_ sender: Any) {
         takeSnapshot()
@@ -213,27 +216,24 @@ class ViewController: UIViewController, BambuserViewDelegate{
     func snapshotTaken(_ imageView: UIImage!) {
         print("snapshot taken")
         greyedView.isHidden = false
+        bluredView.isHidden = false
         view.bringSubview(toFront: greyedView)
-        
+        view.bringSubview(toFront: bluredView)
         takenImageView.image = imageView
-        
         takenImageView.isHidden = false
         view.bringSubview(toFront: takenImageView)
-        
         dismissScreenshotButton.addTarget(self, action: #selector(ViewController.dismissImage), for: UIControlEvents.touchUpInside)
         dismissScreenshotButton.isHidden = false
         view.bringSubview(toFront: dismissScreenshotButton)
-
         saveScreenshotButton.addTarget(self, action: #selector(ViewController.saveImage), for: UIControlEvents.touchUpInside)
         saveScreenshotButton.isHidden = false
         view.bringSubview(toFront: saveScreenshotButton)
-        
         photoTakenTopBar.isHidden = false
         view.bringSubview(toFront: photoTakenTopBar)
-        
+        exitButton.isHidden = false
+        view.bringSubview(toFront: exitButton)
         MultiPeer.instance.send(object: imageView, type: DataType.image.rawValue)
-
-
+        exitButton.addTarget(self, action: #selector(ViewController.exitImage), for: UIControlEvents.touchUpInside)
     }
     
     @objc func saveImage() {
@@ -242,28 +242,38 @@ class ViewController: UIViewController, BambuserViewDelegate{
         dismissScreenshotButton.isHidden = true
         saveScreenshotButton.isHidden = true
         photoTakenTopBar.isHidden = true
+        exitButton.isHidden = true
         view.bringSubview(toFront: imageSavedPrompt)
         imageSavedPrompt.isHidden = false
         view.bringSubview(toFront: dismissImageSaved)
         dismissImageSaved.isHidden = false
     }
     
-    
+    //share
     @IBAction func dismissButton(_ sender: Any) {
         imageSavedPrompt.isHidden = true
         greyedView.isHidden = true
+        bluredView.isHidden = true
+
         dismissImageSaved.isHidden = true
         photoTakenTopBar.isHidden = true
     }
     
-    
-    @objc func dismissImage() {
+    @IBAction func exitImage() {
+        imageSavedPrompt.isHidden = true
         greyedView.isHidden = true
+        bluredView.isHidden = true
+        dismissImageSaved.isHidden = true
+        photoTakenTopBar.isHidden = true
+        exitButton.isHidden = true
+        saveScreenshotButton.isHidden = true
         takenImageView.isHidden = true
         dismissScreenshotButton.isHidden = true
-        saveScreenshotButton.isHidden = true
-        photoTakenTopBar.isHidden = true
-        
+    }
+    
+    @objc func dismissImage() {
+        let vc = UIActivityViewController(activityItems: [takenImageView], applicationActivities: [])
+        present(vc, animated: true)
     }
     
     func displayLoadView() {
@@ -298,5 +308,3 @@ extension ViewController: MultiPeerDelegate {
     func multiPeer(connectedDevicesChanged devices: [String]) {
     }
 }
-
-
