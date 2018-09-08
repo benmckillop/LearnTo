@@ -23,11 +23,16 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     @IBAction func screenshotButton(_ sender: Any) {
         MultiPeer.instance.send(object: "take_screenshot", type: DataType.string.rawValue)
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        MultiPeer.instance.disconnect()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         MultiPeer.instance.initialize(serviceType: "livestream")
         MultiPeer.instance.autoConnect()
+        MultiPeer.instance.debugMode = true
 
         bambuserPlayer.delegate = self
         bambuserPlayer.applicationId = "EE5UFnBB5YbqBXvHFFM4MA"
@@ -86,6 +91,7 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "home")
         self.present(vc, animated: true, completion: nil)
     }
+    
     
 }
 

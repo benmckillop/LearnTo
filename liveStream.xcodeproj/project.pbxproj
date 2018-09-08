@@ -37,6 +37,8 @@
 		2B41235320F858FB00F9523A /* prebuilt in Resources */ = {isa = PBXBuildFile; fileRef = 2B41235220F858FB00F9523A /* prebuilt */; };
 		2B41235520F8595500F9523A /* libbambuser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B41235420F8595400F9523A /* libbambuser.a */; };
 		2B41235720F8595D00F9523A /* libbambuserplayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B41235620F8595D00F9523A /* libbambuserplayer.a */; };
+		2B68F50721429C7C00CABA13 /* 302x302 Square.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B68F50621429C7B00CABA13 /* 302x302 Square.png */; };
+		2B68F52421445F7A00CABA13 /* BottomBarGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B68F52321445F7A00CABA13 /* BottomBarGrey.png */; };
 		2BA0CCD62113117B0093C5BC /* QRCodeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CCD52113117B0093C5BC /* QRCodeIcon.png */; };
 		2BA0CCE021131B140093C5BC /* BackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CCDF21131B140093C5BC /* BackArrow.png */; };
 		2BA0CCE62113A4770093C5BC /* loadingt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CCE52113A4770093C5BC /* loadingt.png */; };
@@ -139,6 +141,8 @@
 		2B41235420F8595400F9523A /* libbambuser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbambuser.a; path = prebuilt/lib/libbambuser.a; sourceTree = "<group>"; };
 		2B41235620F8595D00F9523A /* libbambuserplayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbambuserplayer.a; sourceTree = "<group>"; };
 		2B41235820F859A600F9523A /* libbambuser-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libbambuser-bridge.h"; sourceTree = "<group>"; };
+		2B68F50621429C7B00CABA13 /* 302x302 Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "302x302 Square.png"; sourceTree = "<group>"; };
+		2B68F52321445F7A00CABA13 /* BottomBarGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomBarGrey.png; sourceTree = "<group>"; };
 		2BA0CCD52113117B0093C5BC /* QRCodeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCodeIcon.png; sourceTree = "<group>"; };
 		2BA0CCDF21131B140093C5BC /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		2BA0CCE52113A4770093C5BC /* loadingt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingt.png; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 		2B1E9C4E20FE7612005FCBD0 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				2B68F50621429C7B00CABA13 /* 302x302 Square.png */,
 				2B0535352141021700B5F641 /* ConnectedToPeer.png */,
 				2BCAB25E21402A5E007D3D0D /* Logo.png */,
 				2BCAB25F21402A5F007D3D0D /* SplashScreen.png */,
@@ -260,6 +265,7 @@
 				2BD6CFD7213FDCFA009F3C5A /* HomeButton.png */,
 				2BD6CFDE213FDCFF009F3C5A /* GreyBackground.png */,
 				2B05353B2141480800B5F641 /* Exit.png */,
+				2B68F52321445F7A00CABA13 /* BottomBarGrey.png */,
 				2BF9FF3521236C5200824F05 /* BottomBarNoText.png */,
 				2B38073D2120D4B200B49E4D /* Path 1.png */,
 				2B38073E2120D4B300B49E4D /* Rectangle 1.png */,
@@ -467,8 +473,10 @@
 				2BCAB27921402A91007D3D0D /* Spotlight Icon - 120x120.png in Resources */,
 				2BA0CD152114BC240093C5BC /* StandardButton.png in Resources */,
 				2BA0CD142114BC240093C5BC /* TopbarNoText.png in Resources */,
+				2B68F52421445F7A00CABA13 /* BottomBarGrey.png in Resources */,
 				2B3807422120D4B500B49E4D /* Rectangle 1.png in Resources */,
 				2BCAB27321402A91007D3D0D /* App Icon - 57x57.png in Resources */,
+				2B68F50721429C7C00CABA13 /* 302x302 Square.png in Resources */,
 				2BCAB27C21402A91007D3D0D /* App Icon - 120x120.png in Resources */,
 				2BCAB27821402A91007D3D0D /* Spotlight Icon - 58x58.png in Resources */,
 				2BA0CCE62113A4770093C5BC /* loadingt.png in Resources */,
@@ -487,12 +495,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-liveStream/Pods-liveStream-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MultiPeer/MultiPeer.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiPeer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
