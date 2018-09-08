@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0535362141021800B5F641 /* ConnectedToPeer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0535352141021700B5F641 /* ConnectedToPeer.png */; };
+		2B0535382141444100B5F641 /* ExitButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0535372141444100B5F641 /* ExitButton@3x.png */; };
+		2B05353A2141444600B5F641 /* ExitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0535392141444600B5F641 /* ExitButton.png */; };
+		2B05353C2141480800B5F641 /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B05353B2141480800B5F641 /* Exit.png */; };
+		2B05353E2141480B00B5F641 /* Exit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B05353D2141480B00B5F641 /* Exit@3x.png */; };
 		2B1E9C4920FE6A8C005FCBD0 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9C4820FE6A8C005FCBD0 /* LoadViewController.swift */; };
 		2B1E9D1921025218005FCBD0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */; };
-		2B356E102102B10800CCCA5A /* Path 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B356E0D2102B10700CCCA5A /* Path 1.png */; };
-		2B356E112102B10800CCCA5A /* Rectangle 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B356E0E2102B10800CCCA5A /* Rectangle 1.png */; };
 		2B3807412120D4B500B49E4D /* Path 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B38073D2120D4B200B49E4D /* Path 1.png */; };
 		2B3807422120D4B500B49E4D /* Rectangle 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B38073E2120D4B300B49E4D /* Rectangle 1.png */; };
-		2B3807442120D4B500B49E4D /* Splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3807402120D4B400B49E4D /* Splashscreen.png */; };
 		2B41232620F8581600F9523A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232520F8581600F9523A /* AppDelegate.swift */; };
 		2B41232820F8581600F9523A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41232720F8581600F9523A /* ViewController.swift */; };
 		2B41232B20F8581600F9523A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41232920F8581600F9523A /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		2B41235320F858FB00F9523A /* prebuilt in Resources */ = {isa = PBXBuildFile; fileRef = 2B41235220F858FB00F9523A /* prebuilt */; };
 		2B41235520F8595500F9523A /* libbambuser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B41235420F8595400F9523A /* libbambuser.a */; };
 		2B41235720F8595D00F9523A /* libbambuserplayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B41235620F8595D00F9523A /* libbambuserplayer.a */; };
+		2B68F50721429C7C00CABA13 /* 302x302 Square.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B68F50621429C7B00CABA13 /* 302x302 Square.png */; };
+		2B68F52421445F7A00CABA13 /* BottomBarGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B68F52321445F7A00CABA13 /* BottomBarGrey.png */; };
 		2BA0CCD62113117B0093C5BC /* QRCodeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CCD52113117B0093C5BC /* QRCodeIcon.png */; };
 		2BA0CCE021131B140093C5BC /* BackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CCDF21131B140093C5BC /* BackArrow.png */; };
 		2BA0CCE62113A4770093C5BC /* loadingt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CCE52113A4770093C5BC /* loadingt.png */; };
@@ -97,6 +101,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B0535352141021700B5F641 /* ConnectedToPeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConnectedToPeer.png; sourceTree = "<group>"; };
+		2B0535372141444100B5F641 /* ExitButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExitButton@3x.png"; sourceTree = "<group>"; };
+		2B0535392141444600B5F641 /* ExitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitButton.png; sourceTree = "<group>"; };
+		2B05353B2141480800B5F641 /* Exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exit.png; sourceTree = "<group>"; };
+		2B05353D2141480B00B5F641 /* Exit@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Exit@3x.png"; sourceTree = "<group>"; };
 		2B1E9C4220FE6709005FCBD0 /* libbambuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbambuser.h; sourceTree = "<group>"; };
 		2B1E9C4320FE6739005FCBD0 /* libbambuserplayer-constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libbambuserplayer-constants.h"; sourceTree = "<group>"; };
 		2B1E9C4420FE673A005FCBD0 /* BambuserViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BambuserViewDelegate.h; sourceTree = "<group>"; };
@@ -106,11 +115,8 @@
 		2B1E9C4820FE6A8C005FCBD0 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		2B1E9C4D20FE6D67005FCBD0 /* libbambuserplayer-bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libbambuserplayer-bridge.h"; sourceTree = "<group>"; };
 		2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
-		2B356E0D2102B10700CCCA5A /* Path 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Path 1.png"; path = "../../Path 1.png"; sourceTree = "<group>"; };
-		2B356E0E2102B10800CCCA5A /* Rectangle 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 1.png"; path = "../../Rectangle 1.png"; sourceTree = "<group>"; };
 		2B38073D2120D4B200B49E4D /* Path 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Path 1.png"; sourceTree = "<group>"; };
 		2B38073E2120D4B300B49E4D /* Rectangle 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1.png"; sourceTree = "<group>"; };
-		2B3807402120D4B400B49E4D /* Splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Splashscreen.png; path = ../../Splashscreen.png; sourceTree = "<group>"; };
 		2B41232220F8581600F9523A /* liveStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liveStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B41232520F8581600F9523A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B41232720F8581600F9523A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 		2B41235420F8595400F9523A /* libbambuser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbambuser.a; path = prebuilt/lib/libbambuser.a; sourceTree = "<group>"; };
 		2B41235620F8595D00F9523A /* libbambuserplayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbambuserplayer.a; sourceTree = "<group>"; };
 		2B41235820F859A600F9523A /* libbambuser-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libbambuser-bridge.h"; sourceTree = "<group>"; };
+		2B68F50621429C7B00CABA13 /* 302x302 Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "302x302 Square.png"; sourceTree = "<group>"; };
+		2B68F52321445F7A00CABA13 /* BottomBarGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomBarGrey.png; sourceTree = "<group>"; };
 		2BA0CCD52113117B0093C5BC /* QRCodeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCodeIcon.png; sourceTree = "<group>"; };
 		2BA0CCDF21131B140093C5BC /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		2BA0CCE52113A4770093C5BC /* loadingt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingt.png; sourceTree = "<group>"; };
@@ -236,15 +244,19 @@
 		2B1E9C4E20FE7612005FCBD0 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				2B68F50621429C7B00CABA13 /* 302x302 Square.png */,
+				2B0535352141021700B5F641 /* ConnectedToPeer.png */,
 				2BCAB25E21402A5E007D3D0D /* Logo.png */,
 				2BCAB25F21402A5F007D3D0D /* SplashScreen.png */,
 				2BCAB25D21402A5D007D3D0D /* TopBar.png */,
 				2BCAB25B214025B8007D3D0D /* SF-Pro-Text-Light.otf */,
 				2BD6D00221400CB3009F3C5A /* BroadcastOver.png */,
+				2B0535372141444100B5F641 /* ExitButton@3x.png */,
 				2BD6CFFE213FF20C009F3C5A /* RoundedButton.png */,
 				2BD6CFFA213FE989009F3C5A /* TopImageBar.png */,
 				2BD6CFFC213FEEC1009F3C5A /* ImageSavedPrompt.png */,
 				2BD6CFF6213FE5CA009F3C5A /* Dismiss Button.png */,
+				2B0535392141444600B5F641 /* ExitButton.png */,
 				2BD6D004214012B0009F3C5A /* PleaseWaitScreen.png */,
 				2BD6CFF7213FE5CA009F3C5A /* Save Button.png */,
 				2BD6CFF0213FE227009F3C5A /* BottomBarNoTextTest.png */,
@@ -252,11 +264,13 @@
 				2BD6CFD5213FDCF9009F3C5A /* SaveButton.png */,
 				2BD6CFD7213FDCFA009F3C5A /* HomeButton.png */,
 				2BD6CFDE213FDCFF009F3C5A /* GreyBackground.png */,
+				2B05353B2141480800B5F641 /* Exit.png */,
+				2B68F52321445F7A00CABA13 /* BottomBarGrey.png */,
 				2BF9FF3521236C5200824F05 /* BottomBarNoText.png */,
 				2B38073D2120D4B200B49E4D /* Path 1.png */,
 				2B38073E2120D4B300B49E4D /* Rectangle 1.png */,
-				2B3807402120D4B400B49E4D /* Splashscreen.png */,
 				2BA0CD1D2114EF800093C5BC /* HomescreenVideo.gif */,
+				2B05353D2141480B00B5F641 /* Exit@3x.png */,
 				2BA0CD172114BC4E0093C5BC /* BottomBarWhite.png */,
 				2BA0CD0B2114BC230093C5BC /* DismissButtonNoText.png */,
 				2BA0CD0F2114BC240093C5BC /* StandardButton.png */,
@@ -266,8 +280,6 @@
 				2BA0CCE52113A4770093C5BC /* loadingt.png */,
 				2BA0CCDF21131B140093C5BC /* BackArrow.png */,
 				2BA0CCD52113117B0093C5BC /* QRCodeIcon.png */,
-				2B356E0D2102B10700CCCA5A /* Path 1.png */,
-				2B356E0E2102B10800CCCA5A /* Rectangle 1.png */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -416,8 +428,8 @@
 				2BCAB27E21402A91007D3D0D /* Spotlight Icon - 80x80.png in Resources */,
 				2BA0CCD62113117B0093C5BC /* QRCodeIcon.png in Resources */,
 				2BF9FF3621236C5200824F05 /* BottomBarNoText.png in Resources */,
-				2B356E102102B10800CCCA5A /* Path 1.png in Resources */,
 				2BCAB27621402A91007D3D0D /* App Icon - 180x180.png in Resources */,
+				2B0535362141021800B5F641 /* ConnectedToPeer.png in Resources */,
 				2BA0CD112114BC240093C5BC /* DismissButtonNoText.png in Resources */,
 				2BD6CFFF213FF20D009F3C5A /* RoundedButton.png in Resources */,
 				2BD6CFEF213FDD02009F3C5A /* DismissButton.png in Resources */,
@@ -426,10 +438,13 @@
 				2BD6CFFD213FEEC2009F3C5A /* ImageSavedPrompt.png in Resources */,
 				2BD6CFF8213FE5CB009F3C5A /* Dismiss Button.png in Resources */,
 				2B3807412120D4B500B49E4D /* Path 1.png in Resources */,
+				2B05353C2141480800B5F641 /* Exit.png in Resources */,
+				2B05353A2141444600B5F641 /* ExitButton.png in Resources */,
 				2BD6CFE4213FDD02009F3C5A /* SaveButton.png in Resources */,
 				2BCAB27421402A91007D3D0D /* Spotlight Icon - 40x40.png in Resources */,
 				2BA0CD1E2114EF810093C5BC /* HomescreenVideo.gif in Resources */,
 				2B41232D20F8581800F9523A /* Assets.xcassets in Resources */,
+				2B0535382141444100B5F641 /* ExitButton@3x.png in Resources */,
 				2BCAB26121402A5F007D3D0D /* Logo.png in Resources */,
 				2BA0CD182114BC4F0093C5BC /* BottomBarWhite.png in Resources */,
 				2BCAB27221402A91007D3D0D /* Settings Icon - 87x87.png in Resources */,
@@ -453,14 +468,15 @@
 				2BD6CFF1213FE228009F3C5A /* BottomBarNoTextTest.png in Resources */,
 				2BD6D00321400CB4009F3C5A /* BroadcastOver.png in Resources */,
 				2BA0CD1A2114E1300093C5BC /* WebViewContent.html in Resources */,
-				2B3807442120D4B500B49E4D /* Splashscreen.png in Resources */,
-				2B356E112102B10800CCCA5A /* Rectangle 1.png in Resources */,
 				2BA0CD132114BC240093C5BC /* TopbarLogo.png in Resources */,
+				2B05353E2141480B00B5F641 /* Exit@3x.png in Resources */,
 				2BCAB27921402A91007D3D0D /* Spotlight Icon - 120x120.png in Resources */,
 				2BA0CD152114BC240093C5BC /* StandardButton.png in Resources */,
 				2BA0CD142114BC240093C5BC /* TopbarNoText.png in Resources */,
+				2B68F52421445F7A00CABA13 /* BottomBarGrey.png in Resources */,
 				2B3807422120D4B500B49E4D /* Rectangle 1.png in Resources */,
 				2BCAB27321402A91007D3D0D /* App Icon - 57x57.png in Resources */,
+				2B68F50721429C7C00CABA13 /* 302x302 Square.png in Resources */,
 				2BCAB27C21402A91007D3D0D /* App Icon - 120x120.png in Resources */,
 				2BCAB27821402A91007D3D0D /* Spotlight Icon - 58x58.png in Resources */,
 				2BA0CCE62113A4770093C5BC /* loadingt.png in Resources */,
@@ -479,12 +495,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-liveStream/Pods-liveStream-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MultiPeer/MultiPeer.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiPeer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,7 +700,7 @@
 					"$(PROJECT_DIR)/prebuilt/lib",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.benmckillop.liveStreamTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benmckillop.liveStreamTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/benmckillop/Desktop/liveStream/liveStream/libbambuser-bridge.h";
 				SWIFT_VERSION = 4.0;
@@ -709,7 +727,7 @@
 					"$(PROJECT_DIR)/prebuilt/lib",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.benmckillop.liveStreamTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benmckillop.liveStreamTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/benmckillop/Desktop/liveStream/liveStream/libbambuser-bridge.h";
 				SWIFT_VERSION = 4.0;

@@ -9,5 +9,6 @@ target 'liveStream' do
     pod 'Alamofire', '~> 4.7'
     pod 'SwiftyJSON'
     pod 'MultiPeer'
+    pod 'NVActivityIndicatorView'
 end
 
