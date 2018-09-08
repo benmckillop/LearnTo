@@ -13,10 +13,11 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        MultiPeer.instance.delegate = self
         view.backgroundColor = .white
         view.bringSubview(toFront: topBox)
         view.bringSubview(toFront: topBar)
-        codeLabel.text = "Please bring QR code into view"
+        codeLabel.text = "Please bring the QR code into view"
         codeLabel.textAlignment = .center
         captureDevice = AVCaptureDevice.default(for: .video)
         
