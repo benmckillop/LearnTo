@@ -46,7 +46,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7oJ-fz-6aJ" kind="custom" identifier="arbirary" customClass="firstCustomSegue" customModule="liveStream" customModuleProvider="target" id="4bQ-oE-292"/>
+                                    <segue destination="7oJ-fz-6aJ" kind="presentation" identifier="" id="4bQ-oE-292"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYi-HU-2vS">
@@ -451,6 +451,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreyBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="bxb-aq-X4U">
                                 <rect key="frame" x="-377" y="-812" width="1128" height="2436"/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6q-Dv-bcU">
+                                <rect key="frame" x="-9" y="-15" width="399" height="841"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="HMv-lg-5GO">
+                                    <rect key="frame" x="0.0" y="0.0" width="399" height="841"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYk-i0-Usg">
                                 <rect key="frame" x="44" y="522" width="288" height="59"/>
                                 <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="17"/>
@@ -464,15 +473,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BroadcastOver.png" translatesAutoresizingMaskIntoConstraints="NO" id="oDq-hh-QAE">
                                 <rect key="frame" x="79" y="326" width="217" height="161"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6q-Dv-bcU">
-                                <rect key="frame" x="-9" y="-15" width="399" height="841"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="HMv-lg-5GO">
-                                    <rect key="frame" x="0.0" y="0.0" width="399" height="841"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -530,6 +530,6 @@
         <image name="TopbarNoText.png" width="1128" height="419"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WIz-eH-3IF"/>
+        <segue reference="9X5-3U-UR7"/>
     </inferredMetricsTieBreakers>
 </document>
