@@ -51,7 +51,6 @@
 		2BA0CD182114BC4F0093C5BC /* BottomBarWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CD172114BC4E0093C5BC /* BottomBarWhite.png */; };
 		2BA0CD1A2114E1300093C5BC /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CD192114E1300093C5BC /* WebViewContent.html */; };
 		2BA0CD1E2114EF810093C5BC /* HomescreenVideo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CD1D2114EF800093C5BC /* HomescreenVideo.gif */; };
-		2BA0CD26211504D50093C5BC /* FirstCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0CD25211504D50093C5BC /* FirstCustomSegue.swift */; };
 		2BCAB25C214025E8007D3D0D /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2BCAB25B214025B8007D3D0D /* SF-Pro-Text-Light.otf */; };
 		2BCAB26021402A5F007D3D0D /* TopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCAB25D21402A5D007D3D0D /* TopBar.png */; };
 		2BCAB26121402A5F007D3D0D /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCAB25E21402A5E007D3D0D /* Logo.png */; };
@@ -82,7 +81,6 @@
 		2BD6CFFF213FF20D009F3C5A /* RoundedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6CFFE213FF20C009F3C5A /* RoundedButton.png */; };
 		2BD6D00321400CB4009F3C5A /* BroadcastOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6D00221400CB3009F3C5A /* BroadcastOver.png */; };
 		2BD6D005214012B0009F3C5A /* PleaseWaitScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6D004214012B0009F3C5A /* PleaseWaitScreen.png */; };
-		2BD6D0072140148C009F3C5A /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD6D0062140148C009F3C5A /* SplashScreenViewController.swift */; };
 		2BF9FF3621236C5200824F05 /* BottomBarNoText.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9FF3521236C5200824F05 /* BottomBarNoText.png */; };
 		58FB28139204249627FEFF97 /* Pods_liveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6531C497F5503291AF58B3A5 /* Pods_liveStream.framework */; };
 /* End PBXBuildFile section */
@@ -155,7 +153,6 @@
 		2BA0CD172114BC4E0093C5BC /* BottomBarWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomBarWhite.png; sourceTree = "<group>"; };
 		2BA0CD192114E1300093C5BC /* WebViewContent.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
 		2BA0CD1D2114EF800093C5BC /* HomescreenVideo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HomescreenVideo.gif; sourceTree = "<group>"; };
-		2BA0CD25211504D50093C5BC /* FirstCustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCustomSegue.swift; sourceTree = "<group>"; };
 		2BCAB25B214025B8007D3D0D /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		2BCAB25D21402A5D007D3D0D /* TopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopBar.png; sourceTree = "<group>"; };
 		2BCAB25E21402A5E007D3D0D /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
@@ -186,7 +183,6 @@
 		2BD6CFFE213FF20C009F3C5A /* RoundedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedButton.png; sourceTree = "<group>"; };
 		2BD6D00221400CB3009F3C5A /* BroadcastOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BroadcastOver.png; sourceTree = "<group>"; };
 		2BD6D004214012B0009F3C5A /* PleaseWaitScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PleaseWaitScreen.png; sourceTree = "<group>"; };
-		2BD6D0062140148C009F3C5A /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		2BF9FF3521236C5200824F05 /* BottomBarNoText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BottomBarNoText.png; path = "../../liveStream Designs/BottomBarNoText.png"; sourceTree = "<group>"; };
 		6531C497F5503291AF58B3A5 /* Pods_liveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_liveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		884A08034EABB69FACD3FCF9 /* Pods-liveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liveStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-liveStream/Pods-liveStream.debug.xcconfig"; sourceTree = "<group>"; };
@@ -316,17 +312,15 @@
 				2B1E9C4720FE673A005FCBD0 /* libbambuserplayer.h */,
 				2B41235820F859A600F9523A /* libbambuser-bridge.h */,
 				2B41232520F8581600F9523A /* AppDelegate.swift */,
-				2B41232E20F8581800F9523A /* LaunchScreen.storyboard */,
 				2B41233120F8581800F9523A /* Info.plist */,
 				2B41232C20F8581800F9523A /* Assets.xcassets */,
+				2B41232E20F8581800F9523A /* LaunchScreen.storyboard */,
 				2B41232920F8581600F9523A /* Main.storyboard */,
 				2B41232720F8581600F9523A /* ViewController.swift */,
 				2B1E9D1821025218005FCBD0 /* ScannerViewController.swift */,
 				2B1E9C4820FE6A8C005FCBD0 /* LoadViewController.swift */,
 				2BA0CCFD211455110093C5BC /* homeViewController.swift */,
 				2BA0CD192114E1300093C5BC /* WebViewContent.html */,
-				2BA0CD25211504D50093C5BC /* FirstCustomSegue.swift */,
-				2BD6D0062140148C009F3C5A /* SplashScreenViewController.swift */,
 			);
 			path = liveStream;
 			sourceTree = "<group>";
@@ -536,8 +530,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B41232820F8581600F9523A /* ViewController.swift in Sources */,
-				2BA0CD26211504D50093C5BC /* FirstCustomSegue.swift in Sources */,
-				2BD6D0072140148C009F3C5A /* SplashScreenViewController.swift in Sources */,
 				2B41232620F8581600F9523A /* AppDelegate.swift in Sources */,
 				2B1E9C4920FE6A8C005FCBD0 /* LoadViewController.swift in Sources */,
 				2BA0CCFE211455110093C5BC /* homeViewController.swift in Sources */,
