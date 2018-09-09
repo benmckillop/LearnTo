@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13DC87C8485B5B8BF0D3BB5EB4BFD22E"
+               BlueprintIdentifier = "9272D6A744A2029475F697E450C50A66"
                BlueprintName = "MultiPeer"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "MultiPeer.framework">
+               BuildableName = "libMultiPeer.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
