@@ -1,0 +1,6 @@
+module SwiftyOnboard {
+  umbrella header "SwiftyOnboard-umbrella.h"
+
+  export *
+  module * { export * }
+}

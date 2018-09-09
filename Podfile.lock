@@ -1,30 +1,38 @@
 PODS:
   - Alamofire (4.7.2)
+  - AlertOnboarding (2.0)
   - MultiPeer (0.0.8)
   - NVActivityIndicatorView (4.2.1):
     - NVActivityIndicatorView/Presenter (= 4.2.1)
   - NVActivityIndicatorView/Presenter (4.2.1)
   - SwiftyJSON (4.1.0)
+  - SwiftyOnboard (1.3.6)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - AlertOnboarding
   - MultiPeer
   - NVActivityIndicatorView
   - SwiftyJSON
+  - SwiftyOnboard
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AlertOnboarding
     - MultiPeer
     - NVActivityIndicatorView
     - SwiftyJSON
+    - SwiftyOnboard
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlertOnboarding: 2e6804e67894894807c5d24bcfcd7905897e6f08
   MultiPeer: 64cb9acb798e9178b9374e1475799d09dc55e5b6
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  SwiftyOnboard: 8dec41d4725b3e6ebcae276dd206d7f74c1b7f61
 
-PODFILE CHECKSUM: a5eaeed0bf88e2a384bdc1141e61baf45e70ade5
+PODFILE CHECKSUM: c47a1f79ff3ae7cc120e02f21a96cb7d321582a3
 
 COCOAPODS: 1.5.3
