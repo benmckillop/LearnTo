@@ -9,10 +9,12 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     @IBOutlet weak var bluredView: UIVisualEffectView!
     @IBOutlet weak var broadcastOverPrompt: UIImageView!
     @IBOutlet weak var greyedView: UIImageView!
-    @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var topBox: UIButton!
     @IBOutlet weak var topBar: UINavigationBar!
     @IBOutlet weak var screenshotButton: UIButton!
+    @IBOutlet weak var takeMeHomeButton: UIButton!
+    @IBOutlet weak var imageSavedImagePrompt: UIImageView!
+    @IBOutlet weak var dismissImageSavedPrompt: UIButton!
     
     required init?(coder aDecoder: NSCoder) {
         bambuserPlayer = BambuserPlayer()
@@ -21,7 +23,18 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
     
     
     @IBAction func screenshotButton(_ sender: Any) {
+
         MultiPeer.instance.send(object: "take_screenshot", type: DataType.string.rawValue)
+        
+        view.bringSubview(toFront: greyedView)
+        view.bringSubview(toFront: bluredView)
+        greyedView.isHidden = false
+        bluredView.isHidden = false
+        view.bringSubview(toFront: dismissImageSavedPrompt)
+        view.bringSubview(toFront: imageSavedImagePrompt)
+        imageSavedImagePrompt.isHidden = false
+        dismissImageSavedPrompt.isHidden = false
+
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -43,8 +56,10 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
         bluredView.isHidden = true
         greyedView.isHidden = true
         broadcastOverPrompt.isHidden = true
-        dismissButton.isHidden = true
-
+        takeMeHomeButton.isHidden = true
+        imageSavedImagePrompt.isHidden = true
+        dismissImageSavedPrompt.isHidden = true
+        
         self.view.addSubview(bambuserPlayer)
         
         view.bringSubview(toFront: topBox)
@@ -79,37 +94,48 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
         view.bringSubview(toFront: greyedView)
         view.bringSubview(toFront: bluredView)
         view.bringSubview(toFront: broadcastOverPrompt)
-        view.bringSubview(toFront: dismissButton)
+        view.bringSubview(toFront: takeMeHomeButton)
         
         greyedView.isHidden = false
         bluredView.isHidden = false
         broadcastOverPrompt.isHidden = false
-        dismissButton.isHidden = false
+        takeMeHomeButton.isHidden = false
     }
-
-    @IBAction func modalDismissButton(_ sender: Any) {
+    
+    @IBAction func dismissImageSavedPrompt(_ sender: Any) {
+        imageSavedImagePrompt.isHidden = true
+        dismissImageSavedPrompt.isHidden = true
+        greyedView.isHidden = true
+        bluredView.isHidden = true
+    }
+    
+    @IBAction func takeMeHomeButton(_ sender: Any) {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "home")
         self.present(vc, animated: true, completion: nil)
     }
-    
-    
 }
 
 
 extension loadViewController: MultiPeerDelegate {
-
+    
     func multiPeer(didReceiveData data: Data, ofType type: UInt32) {
         switch type {
+        case DataType.string.rawValue:
+            _ = data.convert() as! String
+            // do something with the received String
+
+            break;
+            
         case DataType.image.rawValue:
-            guard let image = data.convert() as? UIImage else { return }
-            print("___________________________image recieved!___________________________")
+            _ = UIImage(data: data)
+            // do something with the received UIImage
             break;
             
         default:
             break;
         }
     }
+    
     func multiPeer(connectedDevicesChanged devices: [String]) {
     }
 }
-

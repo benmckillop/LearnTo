@@ -12,7 +12,6 @@
 		2B05353A2141444600B5F641 /* ExitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0535392141444600B5F641 /* ExitButton.png */; };
 		2B05353C2141480800B5F641 /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B05353B2141480800B5F641 /* Exit.png */; };
 		2B05353E2141480B00B5F641 /* Exit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B05353D2141480B00B5F641 /* Exit@3x.png */; };
-		2B13E6692145821F002B1914 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B13E6682145821E002B1914 /* Info.plist */; };
 		2B13E6772145B675002B1914 /* Recieving.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B13E6742145B672002B1914 /* Recieving.png */; };
 		2B13E6782145B675002B1914 /* Sending.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B13E6752145B674002B1914 /* Sending.png */; };
 		2B13E6792145B675002B1914 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B13E6762145B674002B1914 /* Screenshot.png */; };
@@ -56,6 +55,10 @@
 		2BA0CD182114BC4F0093C5BC /* BottomBarWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CD172114BC4E0093C5BC /* BottomBarWhite.png */; };
 		2BA0CD1A2114E1300093C5BC /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CD192114E1300093C5BC /* WebViewContent.html */; };
 		2BA0CD1E2114EF810093C5BC /* HomescreenVideo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BA0CD1D2114EF800093C5BC /* HomescreenVideo.gif */; };
+		2BCA9672214E660D0077177D /* Countdown-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCA966E214E660A0077177D /* Countdown-1.png */; };
+		2BCA9673214E660D0077177D /* Countdown-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCA966F214E660B0077177D /* Countdown-3.png */; };
+		2BCA9674214E660D0077177D /* Countdown-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCA9670214E660B0077177D /* Countdown-2.png */; };
+		2BCA9675214E660D0077177D /* ImageTakenPrompt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCA9671214E660C0077177D /* ImageTakenPrompt.png */; };
 		2BCAB25C214025E8007D3D0D /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2BCAB25B214025B8007D3D0D /* SF-Pro-Text-Light.otf */; };
 		2BCAB26021402A5F007D3D0D /* TopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCAB25D21402A5D007D3D0D /* TopBar.png */; };
 		2BCAB26121402A5F007D3D0D /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCAB25E21402A5E007D3D0D /* Logo.png */; };
@@ -109,7 +112,6 @@
 		2B0535392141444600B5F641 /* ExitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitButton.png; sourceTree = "<group>"; };
 		2B05353B2141480800B5F641 /* Exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exit.png; sourceTree = "<group>"; };
 		2B05353D2141480B00B5F641 /* Exit@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Exit@3x.png"; sourceTree = "<group>"; };
-		2B13E6682145821E002B1914 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Downloads/BWWalkthrough-master/BWWalkthrough/Info.plist"; sourceTree = "<group>"; };
 		2B13E6742145B672002B1914 /* Recieving.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Recieving.png; sourceTree = "<group>"; };
 		2B13E6752145B674002B1914 /* Sending.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sending.png; sourceTree = "<group>"; };
 		2B13E6762145B674002B1914 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
@@ -163,6 +165,10 @@
 		2BA0CD172114BC4E0093C5BC /* BottomBarWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomBarWhite.png; sourceTree = "<group>"; };
 		2BA0CD192114E1300093C5BC /* WebViewContent.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
 		2BA0CD1D2114EF800093C5BC /* HomescreenVideo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HomescreenVideo.gif; sourceTree = "<group>"; };
+		2BCA966E214E660A0077177D /* Countdown-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Countdown-1.png"; sourceTree = "<group>"; };
+		2BCA966F214E660B0077177D /* Countdown-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Countdown-3.png"; sourceTree = "<group>"; };
+		2BCA9670214E660B0077177D /* Countdown-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Countdown-2.png"; sourceTree = "<group>"; };
+		2BCA9671214E660C0077177D /* ImageTakenPrompt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTakenPrompt.png; sourceTree = "<group>"; };
 		2BCAB25B214025B8007D3D0D /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		2BCAB25D21402A5D007D3D0D /* TopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopBar.png; sourceTree = "<group>"; };
 		2BCAB25E21402A5E007D3D0D /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
@@ -250,6 +256,10 @@
 		2B1E9C4E20FE7612005FCBD0 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				2BCA966E214E660A0077177D /* Countdown-1.png */,
+				2BCA9670214E660B0077177D /* Countdown-2.png */,
+				2BCA966F214E660B0077177D /* Countdown-3.png */,
+				2BCA9671214E660C0077177D /* ImageTakenPrompt.png */,
 				2B68F50621429C7B00CABA13 /* 302x302 Square.png */,
 				2B0535352141021700B5F641 /* ConnectedToPeer.png */,
 				2BCAB25E21402A5E007D3D0D /* Logo.png */,
@@ -317,7 +327,6 @@
 		2B41232420F8581600F9523A /* liveStream */ = {
 			isa = PBXGroup;
 			children = (
-				2B13E6682145821E002B1914 /* Info.plist */,
 				2B1E9C4D20FE6D67005FCBD0 /* libbambuserplayer-bridge.h */,
 				2B1E9C4520FE673A005FCBD0 /* BambuserConstants.h */,
 				2B1E9C4420FE673A005FCBD0 /* BambuserViewDelegate.h */,
@@ -449,6 +458,7 @@
 				2B13E6782145B675002B1914 /* Sending.png in Resources */,
 				2B3807412120D4B500B49E4D /* Path 1.png in Resources */,
 				2B05353C2141480800B5F641 /* Exit.png in Resources */,
+				2BCA9673214E660D0077177D /* Countdown-3.png in Resources */,
 				2B05353A2141444600B5F641 /* ExitButton.png in Resources */,
 				2BD6CFE4213FDD02009F3C5A /* SaveButton.png in Resources */,
 				2BCAB27421402A91007D3D0D /* Spotlight Icon - 40x40.png in Resources */,
@@ -459,10 +469,12 @@
 				2BCAB26121402A5F007D3D0D /* Logo.png in Resources */,
 				2BA0CD182114BC4F0093C5BC /* BottomBarWhite.png in Resources */,
 				2BCAB27221402A91007D3D0D /* Settings Icon - 87x87.png in Resources */,
+				2BCA9672214E660D0077177D /* Countdown-1.png in Resources */,
 				2B13E67B2145B6BD002B1914 /* OnboardingIcon.png in Resources */,
 				2BCAB27521402A91007D3D0D /* App Icon - 60x60.png in Resources */,
 				2BA0CCE021131B140093C5BC /* BackArrow.png in Resources */,
 				2BA0CD122114BC240093C5BC /* RedBottomBar.png in Resources */,
+				2BCA9675214E660D0077177D /* ImageTakenPrompt.png in Resources */,
 				2BCAB27A21402A91007D3D0D /* Spotlight Icon - 29x29.png in Resources */,
 				2BD6CFED213FDD02009F3C5A /* GreyBackground.png in Resources */,
 				2BCAB26221402A5F007D3D0D /* SplashScreen.png in Resources */,
@@ -482,10 +494,10 @@
 				2BA0CD1A2114E1300093C5BC /* WebViewContent.html in Resources */,
 				2BA0CD132114BC240093C5BC /* TopbarLogo.png in Resources */,
 				2B05353E2141480B00B5F641 /* Exit@3x.png in Resources */,
+				2BCA9674214E660D0077177D /* Countdown-2.png in Resources */,
 				2BCAB27921402A91007D3D0D /* Spotlight Icon - 120x120.png in Resources */,
 				2BA0CD152114BC240093C5BC /* StandardButton.png in Resources */,
 				2BA0CD142114BC240093C5BC /* TopbarNoText.png in Resources */,
-				2B13E6692145821F002B1914 /* Info.plist in Resources */,
 				2B68F52421445F7A00CABA13 /* BottomBarGrey.png in Resources */,
 				2B3807422120D4B500B49E4D /* Rectangle 1.png in Resources */,
 				2B13E6792145B675002B1914 /* Screenshot.png in Resources */,
@@ -624,6 +636,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = liveStream/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -678,6 +691,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = liveStream/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -695,8 +709,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9376M9X52;
-				INFOPLIST_FILE = liveStream/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_FILE = liveStream/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -722,8 +736,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9376M9X52;
-				INFOPLIST_FILE = liveStream/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_FILE = liveStream/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
