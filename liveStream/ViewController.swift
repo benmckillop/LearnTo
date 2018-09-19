@@ -17,7 +17,6 @@ class ViewController: UIViewController, BambuserViewDelegate, NVActivityIndicato
     var activityIndicator : NVActivityIndicatorView!
 
     @IBOutlet weak var whiteSquare: UIImageView!
-    @IBOutlet weak var animationTypeLabel: UILabel!
     @IBOutlet weak var bluredView: UIVisualEffectView!
     @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var dismissImageSaved: UIButton!
@@ -49,6 +48,21 @@ class ViewController: UIViewController, BambuserViewDelegate, NVActivityIndicato
         broadcastStopped()
         super.viewWillDisappear(animated)
     }
+    
+//    @IBAction func shareScreenshotButton(_ sender: Any) {
+//        let activityVC = UIActivityViewController(activityItems: [takenImageView], applicationActivities: [])
+//        present(activityVC, animated: true)
+//        
+//        activityVC.excludedActivityTypes = [
+//            UIActivityType.assignToContact,
+//            UIActivityType.print,
+//            UIActivityType.addToReadingList,
+//            UIActivityType.saveToCameraRoll,
+//            UIActivityType.openInIBooks,
+//            UIActivityType(rawValue: "com.apple.reminders.RemindersEditorExtension"),
+//            UIActivityType(rawValue: "com.apple.mobilenotes.SharingExtension"),
+//        ]
+//    }
     
     @IBAction func qrCodeShow(_ sender: Any) {
         showQRCode()
@@ -110,7 +124,6 @@ class ViewController: UIViewController, BambuserViewDelegate, NVActivityIndicato
     
     //enables the livestream to start broadcasting
     @objc func broadcast() {
-        animationTypeLabel.isHidden = false
         loadingAnimator()
         NSLog("Starting broadcast")
         broadcastButton.setTitle("Connecting", for: UIControlState.normal)
@@ -249,6 +262,8 @@ class ViewController: UIViewController, BambuserViewDelegate, NVActivityIndicato
         view.bringSubview(toFront: exitButton)
         MultiPeer.instance.send(object: imageView, type: DataType.image.rawValue)
         exitButton.addTarget(self, action: #selector(ViewController.exitImage), for: UIControlEvents.touchUpInside)
+        MultiPeer.instance.send(object: "snapshot_taken", type: DataType.string.rawValue)
+
     }
     
     @objc func saveImage() {
@@ -302,8 +317,6 @@ class ViewController: UIViewController, BambuserViewDelegate, NVActivityIndicato
         view.bringSubview(toFront: bluredView)
         let xAxis = self.view.center.x
         let yAxis = self.view.center.y
-        self.view.addSubview(animationTypeLabel)
-        animationTypeLabel.isHidden = false
         let frame = CGRect(x: (xAxis - 27.5 ), y: (yAxis - 27.5), width: 55, height: 55)
         activityIndicator = NVActivityIndicatorView(frame: frame)
         activityIndicator.type = . circleStrokeSpin
@@ -323,7 +336,7 @@ extension ViewController: MultiPeerDelegate {
     func multiPeer(didReceiveData data: Data, ofType type: UInt32) {
         switch type {
         case DataType.string.rawValue:
-            var string = data.convert() as! String
+            let string = data.convert() as! String
             if string == "take_screenshot" {
                 print("screenshot taken")
                 takeSnapshot()
@@ -331,7 +344,7 @@ extension ViewController: MultiPeerDelegate {
             break;
             
         case DataType.image.rawValue:
-            let image = UIImage(data: data)
+            _ = UIImage(data: data)
             // do something with the received UIImage
             break;
             
