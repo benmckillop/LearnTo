@@ -39,7 +39,12 @@ class ViewController: UIViewController, BambuserViewDelegate, NVActivityIndicato
     
     required init?(coder aDecoder: NSCoder) {
         bambuserView = BambuserView(preset: kSessionPresetAuto)
-        bambuserView.applicationId = "EE5UFnBB5YbqBXvHFFM4MA"
+        
+        //HERE
+        bambuserView.applicationId = "JYzVOZ2NLra3wO3gOD8GnQ"
+        //HERE EE5UFnBB5YbqBXvHFFM4MA
+        
+        
         super.init(coder: aDecoder)
         bambuserView.delegate = self
     }
@@ -196,11 +201,17 @@ class ViewController: UIViewController, BambuserViewDelegate, NVActivityIndicato
 
     //uses a get request to get all the broadcasts, json is parced to only show time and id, then is sorted to the latest time
     func httpGet() {
+        
+        
+        //HERE 6z79bmjff25a9n4wb66v3tjso
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer 6z79bmjff25a9n4wb66v3tjso",
+            "Authorization": "Bearer 37ewzlh06d5y3zq62q4fbru42",
             "Accept": "aapplication/vnd.bambuser.v1+json",
             "Content-Type": "application/json"
         ]
+        //HERE
+        
+        
         let broadcastIDSaved = UserDefaults.standard.string(forKey: "broadcastID") ?? ""
         let broadcastURL = "https://api.irisplatform.io/broadcasts/" + broadcastIDSaved
                 Alamofire.request(broadcastURL, headers: headers).responseJSON { (responseData) -> Void in

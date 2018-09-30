@@ -36,9 +36,11 @@ class homeViewController: UIViewController, AlertOnboardingDelegate {
 //
 //            self.alertView.show()
 //
+    
+    
 //        }
 //    }
-//
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,6 +56,8 @@ class homeViewController: UIViewController, AlertOnboardingDelegate {
             if MultiPeer.instance.connectedPeers.count > 1 {
                 MultiPeer.instance.disconnect()
             }
+        
+//        MultiPeer.instance.stopSearching()
         
             let htmlPath = Bundle.main.path(forResource: "WebViewContent", ofType: "html")
             let htmlURL = URL(fileURLWithPath: htmlPath!)

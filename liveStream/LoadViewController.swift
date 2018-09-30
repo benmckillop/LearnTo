@@ -48,7 +48,11 @@ class loadViewController: UIViewController, BambuserPlayerDelegate {
         MultiPeer.instance.debugMode = true
 
         bambuserPlayer.delegate = self
-        bambuserPlayer.applicationId = "EE5UFnBB5YbqBXvHFFM4MA"
+        
+        //HERE
+        bambuserPlayer.applicationId = "JYzVOZ2NLra3wO3gOD8GnQ"
+        //HERE EE5UFnBB5YbqBXvHFFM4MA
+        
         let broadcastID = UserDefaults.standard.string(forKey: "ID") ?? ""
         let video = broadcastID
         bambuserPlayer.playVideo(video)
